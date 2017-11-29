@@ -1,0 +1,72 @@
+{
+  "hero": {
+    "title": "THE BENEFITS OF LEARNING ENGLISH",
+    "subtitle": "The smartest investment in your future",
+    "cta": "CONTACT AN ADVISOR",
+    "cta-url": "/node/501"
+  },
+  "learn-english": {
+    "title": "WHY LEARN ENGLISH?",
+    "description": "English doesn’t just belong to native speakers, it belongs to everybody. Already spoken by a quarter of the world’s population, English offers you so many ways to get ahead: opportunities to work or study abroad; stronger earning power at home, and the freedom to travel and make friends across the world.",
+    "description-bold": "Let’s take a closer look at what English can do for you."
+  },
+  "english-for": {
+    "rows": {
+
+      "english-for-work": {
+        "title": "ENGLISH... FOR WORK",
+
+        "text-1": "Higher pay Wherever you are in the world, the financial benefits of learning English can be significant. In India, for example, fluent English speakers earn up to 34% more than their peers!",
+
+        "text-2": "More job opportunities Employers are on the lookout for English proficiency. According to a survey by the Economist Intelligence Unit, nearly 70% of international executives say that to achieve their goals, they need their staff to master English.",
+
+        "text-3": "The language of business and diplomacy Multinational businesses use English to communicate, as do international organisations such as the NATO, UN and the World Bank"
+      },
+
+      "english-for-study": {
+        "title": "ENGLISH... FOR STUDY",
+
+        "text-1": "If you want to study at one of the most prestigious universities, you’ll need to speak English. All but one of the world’s top ten universities are based in either Britain or the USA and operate in English.",
+
+        "text-2": "Get access to the world’s most influential research. English is overwhelmingly the language modern scholarship, dominating academic publishing and communications.",
+
+        "text-3": "Harness the power of the internet. Around half of all websites are in English."
+      },
+
+      "english-for-personal": {
+        "title": "ENGLISH... FOR YOUR PERSONAL JOURNEY",
+        
+        "text-1": "Get smart. Did you know that learning a foreign language can actually boost your brain power? Studies have shown that people who speak two or more languages are more perceptive, more decisive and have stronger memories!",
+
+        "text-2": "Some of the world’s best music, films, and TV shows are in English. It’s an amazing feeling when you first watch your favourite show without dubbing or subtitles!",
+
+        "text-3": "It’s true – travel broadens the mind. Travellers are more creative, and enjoy greater confidence and fulfilment than people who stay at home. Kaplan International’s language adventures take you on an unforgettable journey to one of our many fascinating destinations.",
+
+        "text-4": "But why stop there? With English, wherever you travel you’ll always find someone to talk to. It’s your world … go explore!"
+      }
+    }
+  },
+  "contact-us": {
+    "title": "CONTACT US",
+    "subtitle": "Get in touch for a free consultation in your local language – or check out our brochure for our full range of courses and destinations",
+    "cta": "Contact an Advisor",
+    "cta-url": "/node/501",
+    "brochure": "Download Free Brochure",
+    "brochure-url": "/node/511"
+  },
+  "discover-more": {
+    "title": "DISCOVER MORE ABOUT STUDYING WITH KAPLAN",
+    "box1": {
+      "title": "Our Courses",
+      "description": "Whatever your ambitions, we have an immersive English program to suit you",
+      "btn": "Learn more",
+      "url": "/node/555"
+    },
+    "box2": {
+      "title": "Our Schools",
+      "description": "40 thriving schools across the English-speaking world",
+      "btn": "Learn more",
+      "url": "/destinations"
+    }
+  }
+}

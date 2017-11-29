@@ -1,0 +1,26 @@
+.discover-more {
+  background-color: #DDDDDD;
+
+  &__inner {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    padding: 10px 0;
+
+    .col-sm-6 {
+      width: 100%;
+      @mixin atSmall {
+        width: 50%;
+      }
+    }
+
+    @mixin atSmall {
+      padding-bottom: 20px;
+    }
+
+  }
+
+}

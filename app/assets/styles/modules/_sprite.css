@@ -1,0 +1,210 @@
+/* Do not edit modules/_sprite directly as it is generated automatically by Gulp.
+Instead edit gulp/templates/sprite */
+
+._icon {
+  background-image: url('//assetlibs.kaplaninternational.com/_assets/about-us/images/sprites/sprite-baa47697.svg')/*rtl:ignore*/;
+}
+
+.no-svg ._icon {
+  background-image: url('//assetlibs.kaplaninternational.com/_assets/about-us/images/sprites/sprite-baa47697.png')/*rtl:ignore*/;
+
+}
+
+
+._icon--accommodation {
+  width: 34px;
+  height: 34px;
+  background-position: 88.78116343490305% 82.26600985221675%/*rtl:ignore*/;
+}
+
+._icon--booking {
+  width: 17px;
+  height: 17px;
+  background-position: 84.03247631935048% 71.39479905437352%/*rtl:ignore*/;
+}
+
+._icon--check {
+  width: 16px;
+  height: 14px;
+  background-position: 88.51351351351352% 70.89201877934272%/*rtl:ignore*/;
+}
+
+._icon--circle1 {
+  width: 252px;
+  height: 302px;
+  background-position: 100% 0/*rtl:ignore*/;
+}
+
+._icon--circle2 {
+  width: 252px;
+  height: 302px;
+  background-position: 0 0/*rtl:ignore*/;
+}
+
+._icon--circle3 {
+  width: 252px;
+  height: 302px;
+  background-position: 50% 0/*rtl:ignore*/;
+}
+
+._icon--courses {
+  width: 34px;
+  height: 34px;
+  background-position: 79.3628808864266% 82.26600985221675%/*rtl:ignore*/;
+}
+
+._icon--current-students {
+  width: 72px;
+  height: 72px;
+  background-position: 21.05263157894737% 90.76086956521739%/*rtl:ignore*/;
+}
+
+._icon--date {
+  width: 17px;
+  height: 16px;
+  background-position: 86.33288227334235% 71.22641509433963%/*rtl:ignore*/;
+}
+
+._icon--faq {
+  width: 34px;
+  height: 34px;
+  background-position: 93.49030470914127% 82.26600985221675%/*rtl:ignore*/;
+}
+
+._icon--higher-education {
+  width: 34px;
+  height: 34px;
+  background-position: 0 100%/*rtl:ignore*/;
+}
+
+._icon--k-clubs {
+  width: 83px;
+  height: 24px;
+  background-position: 39.9702823179792% 72.59615384615384%/*rtl:ignore*/;
+}
+
+._icon--k-extra {
+  width: 82px;
+  height: 24px;
+  background-position: 52.225519287833826% 72.59615384615384%/*rtl:ignore*/;
+}
+
+._icon--k-notes {
+  width: 85px;
+  height: 24px;
+  background-position: 27.421758569299552% 72.59615384615384%/*rtl:ignore*/;
+}
+
+._icon--k-tools {
+  width: 82px;
+  height: 24px;
+  background-position: 64.39169139465875% 72.59615384615384%/*rtl:ignore*/;
+}
+
+._icon--kaplan-logo {
+  width: 184px;
+  height: 32px;
+  background-position: 0 74.01960784313725%/*rtl:ignore*/;
+}
+
+._icon--ki-80-years {
+  width: 72px;
+  height: 72px;
+  background-position: 10.526315789473685% 90.76086956521739%/*rtl:ignore*/;
+}
+
+._icon--ki-80-years-white {
+  width: 72px;
+  height: 72px;
+  background-position: 31.57894736842105% 90.76086956521739%/*rtl:ignore*/;
+}
+
+._icon--kie-highly-recommended {
+  width: 72px;
+  height: 72px;
+  background-position: 42.10526315789474% 90.76086956521739%/*rtl:ignore*/;
+}
+
+._icon--kie-world-schools {
+  width: 72px;
+  height: 72px;
+  background-position: 52.63157894736842% 90.76086956521739%/*rtl:ignore*/;
+}
+
+._icon--kie-world-students {
+  width: 72px;
+  height: 72px;
+  background-position: 63.1578947368421% 90.76086956521739%/*rtl:ignore*/;
+}
+
+._icon--left-arrow {
+  width: 22px;
+  height: 22px;
+  background-position: 79.29155313351498% 72.2488038277512%/*rtl:ignore*/;
+}
+
+._icon--location {
+  width: 17px;
+  height: 17px;
+  background-position: 81.7320703653586% 71.39479905437352%/*rtl:ignore*/;
+}
+
+._icon--mail {
+  width: 22px;
+  height: 22px;
+  background-position: 70.29972752043597% 72.2488038277512%/*rtl:ignore*/;
+}
+
+._icon--pathways {
+  width: 34px;
+  height: 34px;
+  background-position: 4.7091412742382275% 100%/*rtl:ignore*/;
+}
+
+._icon--person {
+  width: 35px;
+  height: 42px;
+  background-position: 69.90291262135922% 83.91959798994975%/*rtl:ignore*/;
+}
+
+._icon--phone {
+  width: 22px;
+  height: 22px;
+  background-position: 73.29700272479565% 72.2488038277512%/*rtl:ignore*/;
+}
+
+._icon--right-arrow {
+  width: 22px;
+  height: 22px;
+  background-position: 76.29427792915531% 72.2488038277512%/*rtl:ignore*/;
+}
+
+._icon--scholl {
+  width: 34px;
+  height: 34px;
+  background-position: 98.1994459833795% 82.26600985221675%/*rtl:ignore*/;
+}
+
+._icon--school {
+  width: 34px;
+  height: 34px;
+  background-position: 74.65373961218836% 82.26600985221675%/*rtl:ignore*/;
+}
+
+._icon--study-with-us {
+  width: 72px;
+  height: 72px;
+  background-position: 0 90.76086956521739%/*rtl:ignore*/;
+}
+
+._icon--travel {
+  width: 34px;
+  height: 34px;
+  background-position: 84.07202216066482% 82.26600985221675%/*rtl:ignore*/;
+}
+
+._icon--visa {
+  width: 34px;
+  height: 34px;
+  background-position: 9.418282548476455% 100%/*rtl:ignore*/;
+}

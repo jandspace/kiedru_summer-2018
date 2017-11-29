@@ -1,0 +1,22 @@
+/* Do not edit modules/_sprite directly as it is generated automatically by Gulp.
+Instead edit gulp/templates/sprite */
+
+{{#shapes}}
+{{#first}}
+._icon {
+  background-image: url('//assetlibs.kaplaninternational.com/_assets/about-us/images/sprites/{{{sprite}}}')/*rtl:ignore*/;
+}
+
+.no-svg ._icon {
+  background-image: url('//assetlibs.kaplaninternational.com/_assets/about-us/images/sprites/{{#replaceSvgWithPng}}{{{sprite}}}{{/replaceSvgWithPng}}')/*rtl:ignore*/;
+
+}
+
+{{/first}}
+
+._icon--{{base}} {
+  width: {{width.outer}}px;
+  height: {{height.outer}}px;
+  background-position: {{position.relative.xy}}/*rtl:ignore*/;
+}
+{{/shapes}}

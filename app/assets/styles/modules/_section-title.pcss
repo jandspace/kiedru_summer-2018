@@ -1,0 +1,142 @@
+.section-title {
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: $ darkGray;
+  text-align: center;
+  margin: 10px 0;
+
+  @mixin atSmall {
+    font-size: 24px;
+  }
+
+  @mixin atMedium {
+    font-size: 28px;
+  }
+
+  @mixin atLarge {
+    font-size: 32px;
+  }
+
+  &--white {
+    color: white;
+  }
+
+  &--left {
+    text-align: center;
+
+    @mixin atSmall {
+      text-align: left;
+    }
+
+  }
+
+  &--right {
+    text-align: right;
+  }
+
+  &--lowercase {
+    text-transform: capitalize;
+  }
+
+  &--small {
+    font-size: 24px;
+  }
+
+  &--smaller {
+    font-size: 18px;
+    text-align: center;
+    line-height: normal;
+    overflow: hidden;
+
+    @mixin atMedium {
+    }
+
+    span {
+      display: inline-block;
+      position: relative;
+
+      &:before {
+        content: none;
+      }
+
+      &:after {
+        content: none;
+      }
+
+      @mixin atSmall {
+        &:before {
+          content: "";
+          position: absolute;
+          height: 5px;
+          border-bottom: 1px solid #AAAAAA;
+          top: 8px;
+          width: 400px;
+        }
+
+        &:after {
+          content: "";
+          position: absolute;
+          height: 5px;
+          border-bottom: 1px solid #AAAAAA;
+          top: 8px;
+          width: 400px;
+        }
+
+        &:before {
+          right: 100%;
+          margin-right: 15px;
+        }
+
+        &:after {
+          left: 100%;
+          margin-left: 15px;
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+.section-subtitle {
+  font-size: 14px;
+  line-height: 1.42857143;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: $ lightGray;
+  text-align: center;
+  margin: 0;
+
+  @mixin atSmall {
+    font-size: 18px;
+  }
+
+  &--white {
+    color: white;
+  }
+
+  &--left {
+    text-align: center;
+
+    @mixin atMedium {
+      text-align: left;
+    }
+
+  }
+
+  &--right {
+    text-align: right;
+  }
+
+  &--lowercase {
+    text-transform: none;
+  }
+
+  &--small {
+    font-size: 16px;
+  }
+
+}
