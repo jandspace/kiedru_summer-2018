@@ -18,7 +18,7 @@ gulp.task('previewDist', function() {
 
 
 gulp.task('deleteDistFolder', function() {
-    return del(['dist/**/*', '!dist/master', '!dist/master/index.html', '!dist/transilation', '!dist/transilation/**/*']);
+    return del(['dist/**/*', '!dist/master', '!dist/master/index.html', '!dist/translation', '!dist/translation/**/*']);
 });
 
 gulp.task('copyGeneralFiles', ['deleteDistFolder'], function() {
@@ -61,7 +61,7 @@ gulp.task('usemin', ['deleteDistFolder', 'styles', 'scripts'], function() {
 
 
 gulp.task('deleteDistFolder2', function() {
-    return del(['docs/**/*', '!docs/master', '!docs/master/index.html', '!docs/transilation', '!docs/transilation/**/*']);
+    return del(['docs/**/*', '!docs/master', '!docs/master/index.html', '!docs/translation', '!docs/translation/**/*']);
 });
 
 gulp.task('copyGeneralFiles2', ['deleteDistFolder'], function() {

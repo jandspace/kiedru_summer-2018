@@ -30,8 +30,8 @@ gulp.task('clean', function() {
         './elandww/**/*',
         '!./elandww/master',
         '!./elandww/master/**',
-        '!./elandww/transilation',
-        '!./elandww/transilation/**',
+        '!./elandww/translation',
+        '!./elandww/translation/**',
 
 
     ];

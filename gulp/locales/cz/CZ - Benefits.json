@@ -1,0 +1,72 @@
+{
+  "hero": {
+    "title": "VÝHODY STUDIA ANGLIČTINY",
+    "subtitle": "Nejchytřejší ivestice do vaší budoucnosti",
+    "cta": "KONTAKTUJTE PORADCE",
+    "cta-url": "/node/501"
+  },
+  "learn-english": {
+    "title": "PROČ SE UČIT ANLGICKY?",
+    "description": "Angličtina nepatří pouze rodilým mluvčím, mluvit jí může každý. Čtvrtina světové populace mluví anglicky a poskytuje mnoho možností pro váš osobní rozvoj: možnost práce a studia v zahraničí; vyšší výdělky, svobodu cestovat a uvářet si přátele po celém světě",
+    "description-bold": "Zjistěte více o tom, kam vás znalost angličtiny může posunout."
+  },
+  "english-for": {
+    "rows": {
+
+      "english-for-work": {
+        "title": "ANGLIČTINA... PRO PRÁCI",
+
+        "text-1": "Vyšší plat, ať jste kdekoli ve světě. Finační výhody znalosti angličtiny mohou být velmi znatelné. S plynulou znalostí angličtiny můžete vydělávat až o 34 5 více než ostatní!",
+
+        "text-2": "Více pracovních příležitosti Zaměstnavatelé neustále hledají zdatné mluvčí angličtiny. Podle průzkumu Economist Intelligence Unit, téměř 70% mezinárodních zaměstanců uvedlo, že k dosažení svých cílů potřebovali znalost angličtiny.",
+
+        "text-3": "Jazyk obchodu a diplomacie. Nadnárodní společnosti komunikují v angličtině, stejně jako organizace tzpu NATO, Spojené národy či Světová banka."
+      },
+
+      "english-for-study": {
+        "title": "ANGLIČTINA... PRO STUDIUM",
+
+        "text-1": "Pokud chcete studovat na jedné z nejprestižnějších škol světa, budete muset mluvit anglicky. Devět z deseti nejlepších vysokých škol na světě má sídlo buď v Bitánii, nebo ve Spojených státech, a operují v angličtině.",
+
+        "text-2": "Získejte přístup k nejeletinějšímu výzkumu. Angličtina je jazykem stipendií a dominuje akademické sféře a komunikaci.",
+
+        "text-3": "Využíjte naplno možnosti internetu. Polovina webových stránek je v angličtině."
+      },
+
+      "english-for-personal": {
+        "title": "ANGLIČTINA... PRO VÁŠ OSOBNÍ ROZVOJ",
+        
+        "text-1": "Buďte chytří. Věděli jste, že znalost cizího jazyka posiluje váš mozek? Studie prokázaly, že lidé, kteří mluví dvěma a více jazyky jsou více perceptivní, snadno se rozhodují a mají lepší paměť.",
+
+        "text-2": "Některé z nejslavnějších filmů, hudby a televizních programů jsou v angličtině. Je to skvělý pocit, když porozumíte vašemu oblíbenému seriálu bez titulků!",
+
+        "text-3": "Je to pravda - cestování rozšiřuje vaši mysl. Cestovatelé jsou kreativnější a sebejistější než ti, kteří zůstávají doma.  Kaplan International vás zavede na dobrodružnou cestu do jedné z našich fascinujících destinací.",
+
+        "text-4": "Proč skončit zde? S angličtinou vždy najdete někoho, s kým si popovídat. Svět je váš ... bežte a poznávejte!"
+      }
+    }
+  },
+  "contact-us": {
+    "title": "KONTAKTUJTE NÁS",
+    "subtitle": "Spojte se s námi pro konzultaci zdarma ve vašem rodném jazyce - anebo si prohlédněte náš katalog pro úplnou nabídku našich kurzů a destinací.",
+    "cta": "Kontaktujte agenta",
+    "cta-url": "/node/501",
+    "brochure": "Stáhnout katalog zdarma",
+    "brochure-url": "/node/511"
+  },
+  "discover-more": {
+    "title": "POZNEJTE VÍCE O STUDIU S KAPLANEM",
+    "box1": {
+      "title": "Naše kurzy",
+      "description": "Ať máte jakékoliv cíle, máme kurz angličtiny přesně pro vás",
+      "btn": "Zjistit víc",
+      "url": "/node/555"
+    },
+    "box2": {
+      "title": "Naše školy",
+      "description": "40 vynikajících škol v celém agnlicky mluvícím světě",
+      "btn": "Zjistit víc",
+      "url": "/destinace"
+    }
+  }
+}

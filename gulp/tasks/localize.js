@@ -13,17 +13,17 @@ gulp.task('localize', function () {
             locales: ['en'],
             localeDir: 'gulp/locales'
         }))
-        .pipe(gulp.dest('elandww/transilation'));
+        .pipe(gulp.dest('elandww/translation'));
 });
 
 
 gulp.task('localizeDrupal', function () {
     return gulp.src('dist/master/index.html')
         .pipe(i18n({
-            locales: ['cz', 'en'],
+            locales: ['ar', 'br', 'cz', 'en'],
             localeDir: 'gulp/locales'
         }))
-        .pipe(gulp.dest('dist/transilation'));
+        .pipe(gulp.dest('dist/translation'));
 });
 
 

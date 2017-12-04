@@ -1,0 +1,72 @@
+{
+  "hero": {
+    "title": "OS BENEFÍCIOS DE APRENDER INGLÊS",
+    "subtitle": "O melhor investimento para o seu futuro",
+    "cta": "ENTRE EM CONTATO",
+    "cta-url": "http://locator.kaplaninternational.com/por/locator/"
+  },
+  "learn-english": {
+    "title": "POR QUE APRENDER INGLÊS?",
+    "description": "O língua inglesa hoje em dia não pertence apenas aos nativos. Já falado por um quarto da população mundial, o inglês oferece muitas oportunidades como trabalhar ou estudar no exterior,  salários melhores e a liberdade de poder viajar e fazer amigos no mundo todo.",
+    "description-bold": "Vamos dar uma olhada em como o inglês pode ajudar você."
+  },
+  "english-for": {
+    "rows": {
+
+      "english-for-work": {
+        "title": "INGLÊS... PARA TRABALHO",
+
+        "text-1": "Com um salário melhor em diversos lugares do mundo, os benefícios financeiros de aprender inglês podem ser significativos. Na Índia, por exemplo, as pessoas fluentes em inglês ganham até 34% a mais do que seus colegas de trabalho!",
+
+        "text-2": "Mais oportunidades de trabalho, pois as empresas estão atentas no seu nível de inglês. De acordo com uma pesquisa da Economist Intelligence Unit, quase 70% dos executivos internacionais dizem que para atingir seus objetivos, eles precisam de funcionários fluentes em inglês.",
+
+        "text-3": "O inglês é a linguagem dos negócios e da diplomacia. As empresas multinacionais usam o inglês para se comunicar, assim como organizações internacionais como a OTAN, a ONU e o Banco Mundial."
+      },
+
+      "english-for-study": {
+        "title": "INGLÊS... PARA OS ESTUDOS",
+
+        "text-1": "Se você quiser estudar em nas melhores universidades do mundo, você precisará falar inglês. Todas, exceto uma, das dez maiores universidades do mundo são baseadas na Grã-Bretanha ou nos EUA e operam em inglês.",
+
+        "text-2": "Entenda o conteúdo das pesquisas mais importantes. O inglês é, de forma esmagadora, a língua acadêmica moderna, dominando as publicações e comunicações acadêmicas.",
+
+        "text-3": "Aproveite o poder da internet. Cerca de metade de todos os sites estão em inglês."
+      },
+
+      "english-for-personal": {
+        "title": "INGLÊS... PARA VOCÊ",
+        
+        "text-1": "Fique mais inteligente. Você sabia que aprender uma língua estrangeira pode realmente aumentar o poder do seu cérebro? Estudos têm demonstrado que as pessoas que falam duas ou mais línguas são mais perceptivas, mais decisivas e têm melhor capacidade de memorizar!",
+
+        "text-2": "Alguns dos melhores filmes, séries e programas de TV do mundo estão em inglês. É uma sensação incrível quando você assiste pela primeira vez em seu programa favorito sem dublagem ou legendas!",
+
+        "text-3": "É verdade, viajar amplia a mente. Os viajantes são mais criativos e mais confiantes do que as pessoas que ficam em casa. O intercâmbio com a Kaplan International English levam você a uma jornada inesquecível em um destino fascinante.",
+
+        "text-4": "Mas por que parar por aí? Com o inglês, onde quer que esteja, você sempre terá alguém para conversar. O mundo é seu ... vai lá explorar!"
+      }
+    }
+  },
+  "contact-us": {
+    "title": "ENTRE EM CONTATO",
+    "subtitle": "Entre em contato com uma agência de intercâmbio parceira ou baixe a nossa brochura para conhecer todos os nossos cursos e escolas.",
+    "cta": "Entre em contato",
+    "cta-url": "http://locator.kaplaninternational.com/por/locator",
+    "brochure": "Download Free Brochure",
+    "brochure-url": "http://locator.kaplaninternational.com/por/locator"
+  },
+  "discover-more": {
+    "title": "SAIBA MAIS SOBRE A KAPLAN",
+    "box1": {
+      "title": "Nossos Cursos",
+      "description": "Seja qual for o seu objetivo, nós temos o intercâmbio perfeito para você",
+      "btn": "Saiba mais",
+      "url": "/node/555"
+    },
+    "box2": {
+      "title": "Nossas Escolas",
+      "description": "40 escolas de inglês espalhadas pelo mundo",
+      "btn": "Saiba mais",
+      "url": "/destinations"
+    }
+  }
+}
