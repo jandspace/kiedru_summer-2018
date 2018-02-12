@@ -1,23 +1,21 @@
+/* ARABIC STYLE AUTOMATION */
 @import "base/_arabic-font.css";
+
+/* BASE */
 @import "base/_variables.pcss";
 @import "base/_mixins.pcss";
 @import "base/_wrapper.pcss";
 @import "base/_global.pcss";
 @import "base/_font.pcss";
+
+/* MODULE */
+@import "modules/_base.pcss";
 @import "modules/_sprite.css";
-@import "modules/_page-section.pcss";
-@import "modules/_section-title.pcss";
-@import "modules/_equal-height.pcss";
-@import "modules/_btn.pcss";
-@import "modules/_reveal-item.pcss";
-@import "modules/_large-hero.css";
-@import "modules/_why-you-should-learn-english.css";
-@import "modules/_contact-us.css";
-@import "modules/_discover-more.css";
-@import "modules/_image-box.css";
+@import "modules/_hero.pcss";
+@import "modules/_package.pcss";
+@import "modules/_process.pcss";
+@import "modules/_other-product.pcss";
+@import "modules/_override.pcss";
 
 
-
-
-
-
+ 

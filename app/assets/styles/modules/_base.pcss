@@ -1,0 +1,148 @@
+/* This file contains very basic styles. */
+
+.field-item {
+	.section-content {
+		border-top: 1px solid rgba(0,0,0,0.05);
+		border-width: 1px 0 0;
+		border-style: solid;
+		-webkit-border-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), color-stop(50%, rgba(0, 0, 0, .1)), to(rgba(0, 0, 0, 0))) 2%;
+		-webkit-border-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, .1) 50%, rgba(0, 0, 0, 0) 100%) 2%;
+		-o-border-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, .1) 50%, rgba(0, 0, 0, 0) 100%) 2%;
+		border-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), color-stop(50%, rgba(0, 0, 0, .1)), to(rgba(0, 0, 0, 0))) 2%;
+		border-image: linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, .1) 50%, rgba(0, 0, 0, 0) 100%) 2%;
+
+		@mixin xs-max {
+			padding: 30px 0;
+		}
+		@mixin sm-min {
+			padding: 5% 0;
+		}
+
+		p,
+		ul,
+		ol {
+			margin-bottom: 1.2em;
+		}
+		li {
+			padding-right: 0;
+			margin-bottom: 0.4em;
+		}
+
+		ul.bullet-points {
+			list-style: none;
+			margin: 0;
+			padding: 0 0 0 20px;
+			li {
+				position: relative;
+				padding-right: 0;
+				margin-bottom: 0.4em;
+				&:before {
+					content: '';
+					display: inline-block;
+					position: absolute;
+					top: 8px;
+					left: -16px;
+					width: 6px;
+					height: 6px;
+					border-radius: 50%;
+					background: $color-secondary-bluegreen;
+				}
+			}
+		}
+
+		h2,
+		h3,
+		h4,
+		h5 {
+			color: $color-grey-l;
+			line-height: 1.1em;
+		}
+
+		.btn {
+			background-color: $color-secondary-bluegreen;
+		}
+		.section-head {
+			text-align: center;
+			padding-bottom: 10px;
+
+			h2.title {
+				color: $color-grey-l;
+				font-weight: $font-weight-bold;
+				text-transform: uppercase;
+				text-align: center;
+				margin-bottom: 0.5em;
+				font-size: 24px;
+				@mixin sm-min { font-size: 26px; }
+				@mixin md-min { font-size: 28px; }
+				@mixin lg-min { font-size: 32px; }
+
+				.m-title {
+					display: block;
+					text-align: left;
+				}
+			}
+
+			.desc {
+				max-width: 860px;
+				margin-left: auto;
+				margin-right: auto;
+				color: $color-grey-j;
+				font-size: 14px;
+				@mixin sm-min { font-size: 16px; }
+				@mixin md-min { font-size: 18px; }
+			}
+		}
+
+		.section-body {
+			.collapsible-item {
+				padding-top: 15px;
+				padding-bottom: 15px;
+
+				@mixin sm-min {
+					display: block;
+					padding: 0;
+				}
+			}
+		}
+
+		.cta-container {
+			margin: 1em 0;
+			text-align: center;
+
+			a {
+				display: inline-block;
+
+				&.btn {
+					min-width: 290px;
+					padding: 14px 8px;
+					background-color: $color-secondary-bluegreen;
+					margin-top: 3px;
+					margin-bottom: 12px;
+					line-height: 1.1;
+					.btn-label {
+						padding: 0 0 6px 0;
+						font-size: 16px;
+						font-weight: $font-weight-bold;
+					}
+					.btn-sub {
+						font-size: 10px;
+						font-weight: $font-weight;
+					}
+				}
+				&.text {
+					font-weight: 600;
+					text-transform: uppercase;
+					text-decoration: underline;
+				}
+			}
+			
+		}
+	}
+}
+
+
+
+
+
+
+

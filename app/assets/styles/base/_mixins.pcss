@@ -1,27 +1,87 @@
-@define-mixin atSmaller {
-  @media (max-width: 529px) {
-    @mixin-content;
-  }
+/* EX
+@mixin sm-min {
+	padding: 0;
 }
+*/
+/* XS - Extra Small Devices - - - - - - - - - - - - - - - */
+	@define-mixin xs-min {
+		@media (min-width: 0px) {
+			@mixin-content;
+		}
+	}
+	@define-mixin xs-max {
+		@media (max-width: 767px) {
+			@mixin-content;
+		}
+	}
+	@define-mixin xs-only {
+		@media (min-width: 0px) and (max-width: 767px) {
+			@mixin-content;
+		}
+	}
+
+/* SM - Small Devices - - - - - - - - - - - - - - - */
+	@define-mixin sm-min {
+		@media (min-width: 768px) {
+			@mixin-content;
+		}
+	}
+	@define-mixin sm-max {
+		@media (max-width: 991px) {
+			@mixin-content;
+		}
+	}
+	@define-mixin sm-only {
+		@media (min-width: 768px) and (max-width: 991px) {
+			@mixin-content;
+		}
+	}
+
+/* MD - Medium Devices - - - - - - - - - - - - - - - */
+	@define-mixin md-min {
+		@media (min-width: 992px) {
+			@mixin-content;
+		}
+	}
+	@define-mixin md-max {
+		@media (max-width: 1199px) {
+			@mixin-content;
+		}
+	}
+	@define-mixin md-only {
+		@media (min-width: 992px) and (max-width: 1199px) {
+			@mixin-content;
+		}
+	}
+
+/* LG - Large Devices - - - - - - - - - - - - - - - */
+	@define-mixin lg-min {
+		@media (min-width: 1200px) {
+			@mixin-content;
+		}
+	}
+	@define-mixin lg-max {
+		@media (max-width: 1599px) {
+			@mixin-content;
+		}
+	}
+	@define-mixin lg-only {
+		@media (min-width: 1200px) and (max-width: 1599px) {
+			@mixin-content;
+		}
+	}
+
+/* XL - Extra Large Devices - - - - - - - - - - - - - - - */
+	@define-mixin xl-min {
+		@media (min-width: 1600px) {
+			@mixin-content;
+		}
+	}
 
 
-@define-mixin atSmall {
-  @media (min-width: 768px) {
-    @mixin-content;
-  }
-}
 
-@define-mixin atMedium {
-  @media (min-width: 890px) {
-    @mixin-content;
-  }
-}
 
-@define-mixin atLarge {
-  @media (min-width: 1170px) {
-    @mixin-content;
-  }
-}
+
 
 
 
@@ -34,16 +94,16 @@
   only screen and (                min-resolution: 192dpi) and (min-width: 1300px),
   only screen and (                min-resolution: 2dppx)  and (min-width: 1300px) {
 
-    @mixin-content;
+	@mixin-content;
 
   }
 }
 
 @define-mixin clearfix {
   &::after {
-    content: "";
-    clear: both;
-    display: table;
+	content: "";
+	clear: both;
+	display: table;
   }
 }
 

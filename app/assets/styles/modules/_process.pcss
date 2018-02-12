@@ -1,0 +1,50 @@
+.field-item {
+	.section--process {
+		background-image: url('../../assets/images/summer-bg.jpg');
+		background-attachment: fixed;
+		.process {
+			.flex-item {
+				flex: 0 0 33.33333333%;
+				max-width: 33.33333333%;
+
+				.item-box {
+					/* background-color: $color-white; */
+					padding: 18px;
+					height: 100%;
+					text-align: center;
+
+					.icon-container {
+						.icon {
+							transform: scale(0.68);
+						}
+					}
+					.desc-container {
+						.title {
+							font-size: 18px;
+							font-weight: 700;
+							text-transform: uppercase;
+							margin: 0 0 0.2em 0;
+						}
+						.strapline {
+							position: relative;
+							font-weight: 700;
+							margin-bottom: 20px;
+							padding-bottom: 20px;
+							color: $color-grey-l;
+
+							&:before {
+								content: '';
+								position: absolute;
+								bottom: 0;
+								left: calc(50% - 20px);
+								width: 40px;
+								height: 3px;
+								background-color: $color-secondary-bluegreen;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
