@@ -1,3 +1,219 @@
-div {
-	
+.field-item {
+	.section--other-product {
+		.other-product {
+			.course-school--container {
+				position: relative;
+
+				.panel {
+					border: none;
+					box-shadow: none;
+					background-color: transparent;
+
+					&.flex-item {
+						flex: 0 0 50%;
+						max-width: 50%;
+						margin: 0;
+						padding: 0 15px;
+					}
+						
+					.panel-heading,
+					h4.panel-title {
+						padding: 0;
+						margin: 0;
+						line-height: $line-height-base;
+
+						a {
+							position: relative;
+							display: block;
+							padding: 20px;
+							min-height: 200px;
+							color: $color-white;
+							text-decoration: none;
+							&:before {
+								display: block;
+								position: absolute;
+								content: "";
+								width: 100%;
+								height: 100%;
+								top: 0;
+								left: 0;
+								right: 0;
+								bottom: 0;
+								background-size: cover;
+								background: rgba(25,20,43,.1);
+								background: linear-gradient(180deg,rgba(25,20,43,.1) 0,rgba(25,20,43,.1) 40%,rgba(25,20,43,.75));
+								filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0019142b",endColorstr="#bf19142b",GradientType=0);
+								background-color: rgba(36,15,110,.6);
+								transition: all .5s ease;
+							}
+							&:after {
+								content: "";
+								position: absolute;
+								left: 20%;
+								bottom: -2px;
+								width: 0;
+								height: 0;
+								border-style: solid;
+								border-width: 0 15px 20px 15px;
+								border-color: transparent transparent $color-grey-d transparent;
+							}
+
+							&.collapsed {
+								&:before {
+									background: rgba(25,20,43,.1);
+									background: linear-gradient(180deg,rgba(25,20,43,.1) 0,rgba(25,20,43,.1) 40%,rgba(25,20,43,.75));
+									filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0019142b",endColorstr="#bf19142b",GradientType=0);
+								}
+								&:after {
+									content: none;
+								}
+							}
+							&:hover {
+								&:before {
+									background-color: rgba(36,15,110,.6);
+								}
+							}
+
+
+
+
+
+
+
+
+
+
+							&.image-box--course {
+								background-image: url(https://assetlibs.kaplaninternational.com/_assets/about-benefits/images/hero-course.jpg);
+							}
+							&.image-box--school {
+								background-image: url(https://assetlibs.kaplaninternational.com/_assets/about-benefits/images/hero-destination-us.jpg);
+							}
+
+							.image-box__btn-inner {
+								position: absolute;
+								display: block;
+								left: 0;
+								bottom: 0;
+								width: 100%;
+								padding: 1.4em;
+								.image-box__title {
+									display: block;
+									font-size: 18px;
+									text-transform: uppercase;
+									font-weight: $font-weight-bold;
+									font-size: 24px;
+								}
+								.image-box__desc {
+									font-size: $font-size-md;
+									font-weight: $font-weight;
+								}
+							}
+
+						}
+					}
+
+					.panel-collapse {
+						position: relative;
+						width: calc(200% + 30px);
+						box-shadow: 0px 30px 100px -42px rgba(0,0,0,.4);
+
+						.panel-body {
+							background-color: $color-grey-d;
+							padding: 30px;
+
+							h3.title {
+								font-weight: $font-weight-bold;
+								text-transform: uppercase;
+							}
+
+							.flex-item {
+								flex: 0 0 100%;
+								max-width: 100%;
+								padding: 15px;
+
+								.item-box {
+									height: 100%;
+									p, div, li {
+										font-size: $font-size-sm;
+										color: $color-grey-j;
+									}
+
+									.title {
+										position: relative;
+										font-size: $font-size-ml;
+										font-weight: $font-weight-bold;
+										text-transform: uppercase;
+										span {
+											position: absolute;
+											display: inline-block;
+											left: 0;
+											top: 0;
+											padding: 0 12px 12px 0;
+											background-color: $color-grey-d;
+										}
+									}
+									
+									.course-price {
+										ul {
+											padding: 6px 0 0 0;
+
+											li {
+												padding: 4px;
+												margin-bottom: 0;
+												border-top: 1px solid $color-grey-e;
+												&:before {
+													content: none;
+												}
+												.price {
+													font-weight: $font-weight-bold;
+												}
+											}
+										}
+									}
+									.link {
+										display: inline-block;
+										font-size: $font-size-sm;
+										border-bottom: 1px solid $color-secondary-bluegreen;
+										text-decoration: none;
+									}
+								}
+								@mixin sm-min {
+									flex: 0 0 50%;
+									max-width: 50%;
+								}
+								@mixin md-min {
+									flex: 0 0 25%;
+									max-width: 25%;
+								}
+								@mixin lg-min {
+									
+								}
+							}
+							.flex-item {
+								border-left: 1px solid rgba(0,0,0,0.1);
+								&:first-child {
+									border-left: none;
+								}
+							}
+
+							.close {
+								position: absolute;
+								top: 15px;
+								right: 15px;
+								font-size: 18px;
+							}
+
+						}
+					}
+
+					&:nth-child(2) {
+						.panel-collapse {
+							margin-left: calc(-100% - 30px);
+						}				
+					}
+				}
+			}
+		}
+	}
 }

@@ -3,11 +3,11 @@ Instead edit gulp/templates/sprite */
 
 {{#shapes}}
 {{#first}}
-.icon {
+.sprite-icon {
   background-image: url('//assetlibs.kaplaninternational.com/_assets/about-us/images/sprites/{{{sprite}}}')/*rtl:ignore*/;
 }
 
-.no-svg .icon {
+.no-svg .sprite-icon {
   background-image: url('//assetlibs.kaplaninternational.com/_assets/about-us/images/sprites/{{#replaceSvgWithPng}}{{{sprite}}}{{/replaceSvgWithPng}}')/*rtl:ignore*/;
 
 }

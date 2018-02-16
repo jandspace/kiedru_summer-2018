@@ -1,11 +1,11 @@
 /* Do not edit modules/_sprite directly as it is generated automatically by Gulp.
 Instead edit gulp/templates/sprite */
 
-.icon {
+.sprite-icon {
   background-image: url('../../assets/images/sprites/sprite-17b20a1c.svg')/*rtl:ignore*/;
 }
 
-.no-svg .icon {
+.no-svg .sprite-icon {
   background-image: url('../../assets/images/sprites/sprite-17b20a1c.png')/*rtl:ignore*/;
 
 }

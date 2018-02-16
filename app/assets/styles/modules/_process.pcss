@@ -8,18 +8,27 @@
 				max-width: 33.33333333%;
 
 				.item-box {
-					/* background-color: rgba(255,255,255,0.6);
-					box-shadow: -1px 90px 95px -62px rgba(0,0,0,.2), 0 25px 65px 0 rgba(0,0,0,0.05); */
+					background: -moz-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.4) 0%, rgba(255,255,255,0) 80%, rgba(255,255,255,0) 100%);
+					background: -webkit-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.4) 0%,rgba(255,255,255,0) 80%,rgba(255,255,255,0) 100%);
+					background: radial-gradient(ellipse at center,  rgba(255,255,255,0.4) 0%,rgba(255,255,255,0) 80%,rgba(255,255,255,0) 100%);
+					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33a5ffeb', endColorstr='#00a5ffeb',GradientType=1 );
+					position: relative;
 					padding: 18px;
 					height: 100%;
 					text-align: center;
 
 					.icon-container {
-						.icon {
-							transform: scale(0.68);
+						display: inline-block;
+						background: $color-white;
+						margin-bottom: 1.5em;
+						border-radius: 50%;
+						.sprite-icon {
+							display: inline-block;
+							transform: scale(0.6);
 						}
 					}
 					.desc-container {
+						position: relative;
 						* {
 							color: $color-grey-k;
 						}
@@ -33,19 +42,45 @@
 							position: relative;
 							font-weight: 700;
 							margin-bottom: 20px;
-							padding-bottom: 20px;
+						}
+					}
+				}
 
+				@mixin sm-min {
+					&:nth-child(2),
+					&:nth-child(3) {
+						.item-box {
 							&:before {
-								content: '';
 								position: absolute;
-								bottom: 0;
-								left: calc(50% - 20px);
-								width: 40px;
-								height: 3px;
-								background-color: $color-secondary-bluegreen;
+								content: "";
+								width: 2px;
+								height: 80%;
+								border-left: 1px dotted rgba(0,0,0,0.25);
+								left: -16px;
+								top: 10%;
+							}
+							.desc-container {
+								&:before {
+									content: "+";
+									position: absolute;
+									width: 60px;
+									height: 60px;
+									line-height: 60px;
+									left: 0;
+									top: 0;
+									font-size: 60px;
+									margin-left: -63px;
+									color: $color-secondary-deepbluegreen;
+								}
 							}
 						}
 					}
+				}
+			}
+
+			.cta-container {
+				p {
+					color: $color-grey-j;
 				}
 			}
 		}

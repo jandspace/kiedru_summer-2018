@@ -54,6 +54,7 @@
     "webpack": "^3.4.1"
   },
   "dependencies": {
+    "gulp-sourcemaps": "^2.6.4",
     "jquery": "^2.2.4",
     "jquery-cycle-2": "^1.0.3",
     "jquery-smooth-scroll": "^2.2.0",
