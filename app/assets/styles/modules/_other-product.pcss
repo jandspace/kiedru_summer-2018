@@ -1,5 +1,14 @@
 .field-item {
 	.section--other-product {
+		background-image: url('//assetlibs.kaplaninternational.com/_assets/summer2018/images/summer2018-pattern-xs.jpg');
+		@mixin sm-min {
+			background-attachment: fixed;
+			background-image: url('//assetlibs.kaplaninternational.com/_assets/summer2018/images/summer2018-pattern-lg.jpg');
+		}
+		@mixin atRetina {
+			background-image: url('//assetlibs.kaplaninternational.com/_assets/summer2018/images/summer2018-pattern@2x.jpg');
+		}
+
 		.other-product {
 			.course-school--container {
 				position: relative;
@@ -10,25 +19,89 @@
 					background-color: transparent;
 
 					&.flex-item {
-						flex: 0 0 50%;
-						max-width: 50%;
+						flex: 0 0 100%;
+						max-width: 100%;
 						margin: 0;
-						padding: 0 15px;
+						padding: 5px 15px;
+						@mixin sm-min {
+							flex: 0 0 50%;
+							max-width: 50%;
+							padding: 0 15px;
+						}
 					}
 						
 					.panel-heading,
 					h4.panel-title {
 						padding: 0;
 						margin: 0;
-						line-height: $line-height-base;
 
 						a {
 							position: relative;
 							display: block;
 							padding: 20px;
-							min-height: 200px;
+							min-height: 180px;
 							color: $color-white;
 							text-decoration: none;
+							filter: grayscale(100%);
+
+							@mixin sm-min {
+								min-height: 200px;
+							}
+
+							.image-box__btn-inner {
+								position: absolute;
+								display: block;
+								left: 0;
+								bottom: 0;
+								width: 100%;
+								padding: 1.5em;
+								.image-box__title {
+									display: block;
+									font-size: 16px;
+									text-transform: uppercase;
+									margin-bottom: 0.25em;
+									font-weight: $font-weight-bold;
+									@mixin sm-min {
+										margin-bottom: 0.5em;
+										font-size: 20px;
+									}
+									@mixin md-min {
+										font-size: 24px;
+									}
+								}
+								.image-box__desc {
+									font-size: $font-size-sm;
+									font-weight: $font-weight;
+									@mixin md-min {
+										font-size: $font-size-md;
+									}
+								}
+								.image-box__link {
+									margin-top: 0.5em;
+									font-size: $font-size-sm;
+									.more {
+										display: none;
+										&:before {
+											content: "\e683";
+											font-family: kie;
+											display: inline-block;
+											margin-right: 4px;
+											vertical-align: -2px;
+										}
+									}
+									.less {
+										display: block;
+										border-bottom: 2px solid transparent;
+										&:before {
+											content: "\e682";
+											font-family: kie;
+											display: inline-block;
+											margin-right: 4px;
+										}
+									}
+								}
+							}
+
 							&:before {
 								display: block;
 								position: absolute;
@@ -49,7 +122,7 @@
 							&:after {
 								content: "";
 								position: absolute;
-								left: 20%;
+								left: 54px;
 								bottom: -2px;
 								width: 0;
 								height: 0;
@@ -59,6 +132,7 @@
 							}
 
 							&.collapsed {
+								filter: grayscale(0);
 								&:before {
 									background: rgba(25,20,43,.1);
 									background: linear-gradient(180deg,rgba(25,20,43,.1) 0,rgba(25,20,43,.1) 40%,rgba(25,20,43,.75));
@@ -67,6 +141,17 @@
 								&:after {
 									content: none;
 								}
+
+								.image-box__link {
+									.more {
+										display: inline-block;
+										color: $color-secondary-aqua;
+										border-bottom: 2px solid $color-secondary-aqua;
+									}
+									.less {
+										display: none;
+									}
+								}
 							}
 							&:hover {
 								&:before {
@@ -74,49 +159,22 @@
 								}
 							}
 
-
-
-
-
-
-
-
-
-
 							&.image-box--course {
-								background-image: url(https://assetlibs.kaplaninternational.com/_assets/about-benefits/images/hero-course.jpg);
+								background-image: url('//assetlibs.kaplaninternational.com/_assets/about-benefits/images/hero-course.jpg');
 							}
 							&.image-box--school {
-								background-image: url(https://assetlibs.kaplaninternational.com/_assets/about-benefits/images/hero-destination-us.jpg);
+								background-image: url('//assetlibs.kaplaninternational.com/_assets/about-benefits/images/hero-destination-us.jpg');
 							}
-
-							.image-box__btn-inner {
-								position: absolute;
-								display: block;
-								left: 0;
-								bottom: 0;
-								width: 100%;
-								padding: 1.4em;
-								.image-box__title {
-									display: block;
-									font-size: 18px;
-									text-transform: uppercase;
-									font-weight: $font-weight-bold;
-									font-size: 24px;
-								}
-								.image-box__desc {
-									font-size: $font-size-md;
-									font-weight: $font-weight;
-								}
-							}
-
 						}
 					}
 
 					.panel-collapse {
 						position: relative;
-						width: calc(200% + 30px);
 						box-shadow: 0px 30px 100px -42px rgba(0,0,0,.4);
+
+						@mixin sm-min {
+							width: calc(200% + 30px);
+						}						
 
 						.panel-body {
 							background-color: $color-grey-d;
@@ -131,6 +189,9 @@
 								flex: 0 0 100%;
 								max-width: 100%;
 								padding: 15px;
+								@mixin sm-min {
+									padding: 5px 15px;
+								}
 
 								.item-box {
 									height: 100%;
@@ -139,22 +200,36 @@
 										color: $color-grey-j;
 									}
 
+
 									.title {
 										position: relative;
-										font-size: $font-size-ml;
-										font-weight: $font-weight-bold;
-										text-transform: uppercase;
-										span {
-											position: absolute;
-											display: inline-block;
-											left: 0;
-											top: 0;
-											padding: 0 12px 12px 0;
-											background-color: $color-grey-d;
+										a {
+											color: $color-grey-j;
+											font-size: $font-size-ml;
+											font-weight: $font-weight-bold;
+											text-transform: uppercase;
+											span {
+												position: absolute;
+												display: inline-block;
+												left: 0;
+												top: 0;
+												padding: 0 12px 8px 0;
+												color: $color-grey-j;
+												font-size: $font-size-ml;
+												font-weight: $font-weight-bold;
+												text-transform: uppercase;
+												background-color: $color-grey-d;
+											}
 										}
 									}
+
+									.bullet-points,
+									.desc {
+										font-size: $font-size-sm;
+										margin-bottom: 0.5em;
+									}
 									
-									.course-price {
+									/* .course-price {
 										ul {
 											padding: 6px 0 0 0;
 
@@ -170,28 +245,27 @@
 												}
 											}
 										}
-									}
+									} */
+
 									.link {
 										display: inline-block;
+										font-weight: $font-weight-medium;
 										font-size: $font-size-sm;
 										border-bottom: 1px solid $color-secondary-bluegreen;
 										text-decoration: none;
 									}
 								}
 								@mixin sm-min {
-									flex: 0 0 50%;
-									max-width: 50%;
-								}
-								@mixin md-min {
-									flex: 0 0 25%;
-									max-width: 25%;
-								}
-								@mixin lg-min {
-									
+									flex: 0 0 33.33333333%;
+									max-width: 33.33333333%;
 								}
 							}
 							.flex-item {
-								border-left: 1px solid rgba(0,0,0,0.1);
+								border-top: 1px solid rgba(0,0,0,0.1);
+								@mixin sm-min {
+									border-top: none;
+									border-left: 1px solid rgba(0,0,0,0.1);
+								}
 								&:first-child {
 									border-left: none;
 								}
@@ -209,7 +283,9 @@
 
 					&:nth-child(2) {
 						.panel-collapse {
-							margin-left: calc(-100% - 30px);
+							@mixin sm-min {
+								margin-left: calc(-100% - 30px);
+							}
 						}				
 					}
 				}

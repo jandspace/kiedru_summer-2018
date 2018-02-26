@@ -119,19 +119,26 @@
 
 				&.btn {
 					min-width: 290px;
-					padding: 14px 8px;
+					padding: 10px 6px;
 					background-color: $color-secondary-bluegreen;
 					margin-top: 3px;
 					margin-bottom: 12px;
 					line-height: 1.1;
+					@mixin md-min {
+						padding: 14px 8px;
+					}
 					&:hover,
 					&:focus {
 						background-color: $color-primary-b80;
 					}
 					.btn-label {
-						padding: 0 0 6px 0;
-						font-size: 16px;
+						padding: 0 0 4px 0;
+						font-size: 15px;
 						font-weight: $font-weight-bold;
+						@mixin md-min {
+							padding: 0 0 6px 0;
+							font-size: 16px;
+						}
 					}
 					.btn-sub {
 						font-size: 10px;

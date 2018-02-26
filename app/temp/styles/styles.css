@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese');
 @import url('https://fonts.googleapis.com/css?family=Prompt:300,400,600,700,800&subset=thai');
-@import url(//fonts.googleapis.com/earlyaccess/notokufiarabic.css);
+@import url('https://fonts.googleapis.com/earlyaccess/notokufiarabic.css');
 /* ARABIC STYLE AUTOMATION */
 /*rtl:raw:@import url(//fonts.googleapis.com/earlyaccess/droidarabickufi.css)*/
 /* BASE */
@@ -14,6 +14,7 @@
 /* MD - Medium Devices - - - - - - - - - - - - - - - */
 /* LG - Large Devices - - - - - - - - - - - - - - - */
 /* XL - Extra Large Devices - - - - - - - - - - - - - - - */
+/* Retina - - - - - - - - - - - - - - - */
 .wrapper {
   max-width: 1170px;
   margin-left: auto;
@@ -97,7 +98,9 @@ a:hover {
 	}
 @media (max-width: 767px) {
 .fullwidth {
-		width: 100%;
+		width: auto;
+		margin-left: -15px;
+		margin-right: -15px;
 		left: inherit
 }
 		}
@@ -332,21 +335,32 @@ body .node * {
 			}
 .field-item .section-content .cta-container a.btn {
 					min-width: 290px;
-					padding: 14px 8px;
+					padding: 10px 6px;
 					background-color: #007DB3;
 					margin-top: 3px;
 					margin-bottom: 12px;
 					line-height: 1.1;
 				}
+@media (min-width: 992px) {
+.field-item .section-content .cta-container a.btn {
+						padding: 14px 8px
+				}
+		}
 .field-item .section-content .cta-container a.btn:hover,
 					.field-item .section-content .cta-container a.btn:focus {
 						background-color: #1D0C58;
 					}
 .field-item .section-content .cta-container a.btn .btn-label {
-						padding: 0 0 6px 0;
-						font-size: 16px;
+						padding: 0 0 4px 0;
+						font-size: 15px;
 						font-weight: 700;
 					}
+@media (min-width: 992px) {
+.field-item .section-content .cta-container a.btn .btn-label {
+							padding: 0 0 6px 0;
+							font-size: 16px
+					}
+		}
 .field-item .section-content .cta-container a.btn .btn-sub {
 						font-size: 10px;
 						font-weight: 400;
@@ -359,10 +373,10 @@ body .node * {
 /* Do not edit modules/_sprite directly as it is generated automatically by Gulp.
 Instead edit gulp/templates/sprite */
 .sprite-icon {
-  background-image: url('../../assets/images/sprites/sprite-17b20a1c.svg')/*rtl:ignore*/;
+  background-image: url('//assetlibs.kaplaninternational.com/_assets/summer2018/images/sprites/sprite-17b20a1c.svg')/*rtl:ignore*/;
 }
 .no-svg .sprite-icon {
-  background-image: url('../../assets/images/sprites/sprite-17b20a1c.png')/*rtl:ignore*/;
+  background-image: url('//assetlibs.kaplaninternational.com/_assets/summer2018/images/sprites/sprite-17b20a1c.png')/*rtl:ignore*/;
 
 }
 .icon--kaplan-accommodation {
@@ -386,6 +400,7 @@ Instead edit gulp/templates/sprite */
 .field-item .section--hero .hero .hero-item-container {
 				position: relative;
 				z-index: 1;
+				overflow: hidden;
 			}
 .field-item .section--hero .hero .hero-item-container .hero-image {
 					background-color: #000;
@@ -395,151 +410,220 @@ Instead edit gulp/templates/sprite */
 					left: 0;
 					width: 100%;
 					height: 100%;
-
 				}
 .field-item .section--hero .hero .hero-item-container .hero-image * {
 						width: 100%;
 						height: 100%;
 					}
-.field-item .section--hero .hero .hero-item-container .hero-image .item-bg { background-image: url('../../assets/images/summer-2018-xl.jpg'); }
+.field-item .section--hero .hero .hero-item-container .hero-image .item-bg { 
+						background-image: url('//assetlibs.kaplaninternational.com/_assets/summer2018/images/summer2018-hero-xs.jpg');
+					}
 @media (min-width: 768px) {
-						.field-item .section--hero .hero .hero-item-container .hero-image .item-bg { background-image: url('../../assets/images/summer-2018-xl.jpg'); }
+.field-item .section--hero .hero .hero-item-container .hero-image .item-bg {
+							background-image: url('//assetlibs.kaplaninternational.com/_assets/summer2018/images/summer2018-hero-sm.jpg')
+					}
 		}
 @media (min-width: 992px) {
-						.field-item .section--hero .hero .hero-item-container .hero-image .item-bg { background-image: url('../../assets/images/summer-2018-xl.jpg'); }
+.field-item .section--hero .hero .hero-item-container .hero-image .item-bg {
+							background-image: url('//assetlibs.kaplaninternational.com/_assets/summer2018/images/summer2018-hero-md.jpg')
+					}
 		}
 @media (min-width: 1200px) {
-						.field-item .section--hero .hero .hero-item-container .hero-image .item-bg { background-image: url('../../assets/images/summer-2018-xl.jpg'); }
+.field-item .section--hero .hero .hero-item-container .hero-image .item-bg {
+							background-image: url('//assetlibs.kaplaninternational.com/_assets/summer2018/images/summer2018-hero-lg.jpg')
+					}
+		}
+@media
+			only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 1300px),
+			only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 1300px),
+			only screen and (        min-device-pixel-ratio: 2)      and (min-width: 1300px),
+			only screen and (                -webkit-min-device-pixel-ratio: 2) and (min-width: 1300px),
+			only screen and (                min-resolution: 192dpi) and (min-width: 1300px),
+			only screen and (                -webkit-min-device-pixel-ratio: 2)  and (min-width: 1300px),
+			only screen and (                min-resolution: 2dppx)  and (min-width: 1300px) {
+.field-item .section--hero .hero .hero-item-container .hero-image .item-bg {
+							background-image: url('//assetlibs.kaplaninternational.com/_assets/summer2018/images/summer2018-hero@2x.jpg')
+					}
 		}
 .field-item .section--hero .hero .hero-item-container .hero-text {
-					text-align: center;
 					color: #FFFFFF;
-					/* background-color: rgba(0,0,0,0.1); */
 					background-size: 100% 100%;
+					background: -webkit-gradient(linear,  left top, left bottom,  from(rgba(193,138,36,0)),color-stop(50%, rgba(193,138,36,0)),to(rgba(193,138,36,0.75)));
+					background: linear-gradient(to bottom,  rgba(193,138,36,0) 0%,rgba(193,138,36,0) 50%,rgba(193,138,36,0.75) 100%);
+					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00c18a24', endColorstr='#bfc18a24',GradientType=0 );
 				}
 @media (max-width: 767px) {
 .field-item .section--hero .hero .hero-item-container .hero-text {
-						padding: 25% 0 25% 0;
-						background: rgba(0,0,0,0.25)
+						padding: 42% 0 2% 0;
+						background: rgba(0,0,0,0.1)
 				}
 		}
 @media (min-width: 768px) {
 .field-item .section--hero .hero .hero-item-container .hero-text {
-						padding: 15% 0
+						padding: 24% 0 0 0
 				}
 		}
 @media (min-width: 992px) {
 .field-item .section--hero .hero .hero-item-container .hero-text {
-						padding: 10% 0
+						padding: 18% 0 0 0
 				}
 		}
 @media (min-width: 1200px) {
 .field-item .section--hero .hero .hero-item-container .hero-text {
-						padding: 8% 0
+						padding: 16% 0 0 0
 				}
 		}
-.field-item .section--hero .hero .hero-item-container .hero-text h1.title {							
-						text-transform: uppercase;
-						font-weight: 800;
-						font-size: 30px;
+.field-item .section--hero .hero .hero-item-container .hero-text .hero-inner {
+						position: relative;
 					}
+.field-item .section--hero .hero .hero-item-container .hero-text .hero-inner h1.campaign-title {
+							margin-bottom: 0;
+						}
 @media (min-width: 768px) {
-.field-item .section--hero .hero .hero-item-container .hero-text h1.title {font-size: 46px
-					}
+.field-item .section--hero .hero .hero-item-container .hero-text .hero-inner h1.campaign-title {
+								width: calc(100% - 100px)
+						}
 		}
 @media (min-width: 992px) {
-.field-item .section--hero .hero .hero-item-container .hero-text h1.title {font-size: 48px
-					}
+.field-item .section--hero .hero .hero-item-container .hero-text .hero-inner h1.campaign-title {
+								width: calc(100% - 120px)
+						}
+		}
+.field-item .section--hero .hero .hero-item-container .hero-text .hero-inner h1.campaign-title .title-inner {
+								display: inline-block;
+								line-height: 1;
+								color: #F0F0F0;
+								text-transform: uppercase;
+								font-weight: 800;
+								text-shadow: 0px -2px 16px rgba(193, 138, 36, 0.95);
+							}
+.field-item .section--hero .hero .hero-item-container .hero-text .hero-inner h1.campaign-title .title-inner span {
+									display: block;
+								}
+.field-item .section--hero .hero .hero-item-container .hero-text .hero-inner h1.campaign-title .title-inner .title {
+									font-size: 42px;
+									letter-spacing: -0.02em;
+									padding-bottom: 0.1em;
+								}
+@media (min-width: 768px) {
+.field-item .section--hero .hero .hero-item-container .hero-text .hero-inner h1.campaign-title .title-inner .title {
+										font-size: 60px;
+										letter-spacing: -0.02em
+										/* border-bottom: 10px solid $color-grey-c; */
+								}
+		}
+@media (min-width: 992px) {
+.field-item .section--hero .hero .hero-item-container .hero-text .hero-inner h1.campaign-title .title-inner .title {
+										font-size: 86px;
+										letter-spacing: -0.03em
+										/* border-bottom: 15px solid $color-grey-c; */
+								}
 		}
 @media (min-width: 1200px) {
-.field-item .section--hero .hero .hero-item-container .hero-text h1.title {font-size: 62px
-					}
+.field-item .section--hero .hero .hero-item-container .hero-text .hero-inner h1.campaign-title .title-inner .title {
+										font-size: 102px;
+										letter-spacing: -0.04em
+								}
+		}
+.field-item .section--hero .hero .hero-item-container .hero-text .hero-inner h1.campaign-title .title-inner .strapline {
+									padding: 0;
+									font-size: 16px;
+									line-height: 1.28571428;
+								}
+@media (min-width: 768px) {
+.field-item .section--hero .hero .hero-item-container .hero-text .hero-inner h1.campaign-title .title-inner .strapline {
+										font-size: 18px
+								}
+		}
+@media (min-width: 992px) {
+.field-item .section--hero .hero .hero-item-container .hero-text .hero-inner h1.campaign-title .title-inner .strapline {
+										font-size: 24px
+								}
+		}
+@media (min-width: 1200px) {
+.field-item .section--hero .hero .hero-item-container .hero-text .hero-inner h1.campaign-title .title-inner .strapline {
+										font-size: 28px
+								}
+		}
+@media (min-width: 768px) {
+.field-item .section--hero .hero .hero-item-container .hero-text .hero-inner .hero-cta {
+								position: absolute;
+								bottom: 0;
+								right: 0;
+								float: none
+						}
+		}
+.field-item .section--hero .hero .hero-item-container .hero-text .hero-inner .hero-cta .btn.hero-btn {
+									position: relative;
+									z-index: 1;
+									font-size: 13px !important;
+									color: #FFFFFF;
+									text-transform: uppercase;
+									font-weight: 700;
+									line-height: 1.1;
+									padding: 1.25em;
+									margin: 1em 0;
+									max-width: 250px;
+									overflow: hidden;
+									-webkit-box-align: center;
+									    -ms-flex-align: center;
+									        align-items: center;
+									-webkit-box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.75);
+									        box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.75);
+								}
+.field-item .section--hero .hero .hero-item-container .hero-text .hero-inner .hero-cta .btn.hero-btn.primary {
+										background-color: #007DB3;
+										border: none;
+									}
+.field-item .section--hero .hero .hero-item-container .hero-text .hero-inner .hero-cta .btn.hero-btn.main-cta-ani {
+										background: -webkit-gradient(linear, right top, left top, from(#007DB3), color-stop(#007DB3), color-stop(#00E4FF), color-stop(#007DB3), to(#007DB3));
+										background: linear-gradient(270deg, #007DB3, #007DB3, #00E4FF, #007DB3, #007DB3);
+										background-size: 1000% 1000%;
+										-webkit-animation: Gradation-Ani 6s ease infinite;
+										animation: Gradation-Ani 6s ease infinite;
+									}
+.field-item .section--hero .hero .hero-item-container .hero-text .hero-inner .hero-cta .btn.hero-btn:before {
+										content: '';
+										position: absolute;
+										z-index: -1;
+										top: 0;
+										left: 0;
+										width: 0;
+										height: 100%;
+										background-color: #240F6E;
+										-webkit-transition: width .3s;
+										transition: width .3s;
+									}
+.field-item .section--hero .hero .hero-item-container .hero-text .hero-inner .hero-cta .btn.hero-btn:hover {
+										border-color: #240F6E;
+
+									}
+.field-item .section--hero .hero .hero-item-container .hero-text .hero-inner .hero-cta .btn.hero-btn:hover:before {
+											width: 100%;
+										}
+.field-item .section--hero .hero .hero-item-container .hero-text .hero-inner .hero-cta .btn.hero-btn span {
+										-webkit-box-flex: 0;
+										    -ms-flex: 0 0 100%;
+										        flex: 0 0 100%;
+										max-width: 100%;
+									}
+@media (min-width: 768px) {
+.field-item .section--hero .hero .hero-item-container .hero-text .hero-inner .hero-cta .btn.hero-btn {
+										width: 120px;
+										height: 120px;
+										border-radius: 50%
+								}
+		}
+@media (min-width: 992px) {
+.field-item .section--hero .hero .hero-item-container .hero-text .hero-inner .hero-cta .btn.hero-btn {
+										width: 150px;
+										height: 150px;
+										font-size: 16px !important
+								}
+		}
+@media (min-width: 1200px) {
 		}
 @media (min-width: 1600px) {
-.field-item .section--hero .hero .hero-item-container .hero-text h1.title {font-size: 68px
-					}
-		}
-.field-item .section--hero .hero .hero-item-container .hero-text h3.strapline {
-						color: #FFFFFF;
-						font-weight: 400;
-						margin: 1em 0;
-						padding: 0;
-						font-size: 14px;
-						text-shadow: 1px 1px 16px rgba(0, 0, 0, 0.5);
-					}
-@media (min-width: 768px) {
-.field-item .section--hero .hero .hero-item-container .hero-text h3.strapline { font-size: 18px
-					}
-		}
-@media (min-width: 992px) {
-.field-item .section--hero .hero .hero-item-container .hero-text h3.strapline { font-size: 20px; padding: 0 10%
-					}
-		}
-@media (min-width: 1200px) {
-.field-item .section--hero .hero .hero-item-container .hero-text h3.strapline { font-size: 24px; padding: 0 12%
-					}
-		}
-.field-item .section--hero .hero .hero-item-container .hero-text .btn.hero-btn {
-							position: relative;
-							z-index: 1;
-							font-size: 14px !important;
-							color: #FFFFFF;
-							text-transform: uppercase;
-							font-weight: 600;
-							line-height: 1.1;
-							margin: 0.25em;
-							padding: 1.1em 1em;
-							width: 100%;
-							max-width: 290px;
-							overflow: hidden;
-							white-space: nowrap;
-						}
-.field-item .section--hero .hero .hero-item-container .hero-text .btn.hero-btn.primary {
-								background-color: #007DB3;
-								border: 1px solid transparent;
-							}
-.field-item .section--hero .hero .hero-item-container .hero-text .btn.hero-btn.secondary {
-								background-color: transparent;
-								border: 1px solid #FFFFFF;
-							}
-.field-item .section--hero .hero .hero-item-container .hero-text .btn.hero-btn.main-cta-ani {
-								background: -webkit-gradient(linear, right top, left top, from(#007DB3), color-stop(#007DB3), color-stop(#00E4FF), color-stop(#007DB3), to(#007DB3));
-								background: linear-gradient(270deg, #007DB3, #007DB3, #00E4FF, #007DB3, #007DB3);
-								background-size: 1000% 1000%;
-								-webkit-animation: Gradation-Ani 6s ease infinite;
-								animation: Gradation-Ani 6s ease infinite;
-							}
-.field-item .section--hero .hero .hero-item-container .hero-text .btn.hero-btn:before {
-								content: '';
-								position: absolute;
-								z-index: -1;
-								top: 0;
-								left: 0;
-								width: 0;
-								height: 100%;
-								background-color: #240F6E;
-								-webkit-transition: width .3s;
-								transition: width .3s;
-							}
-@media (min-width: 768px) {
-.field-item .section--hero .hero .hero-item-container .hero-text .btn.hero-btn {
-								width: auto;
-								min-width: 250px
-						}
-		}
-@media (min-width: 992px) {
-.field-item .section--hero .hero .hero-item-container .hero-text .btn.hero-btn {
-								font-size: 16px !important
-						}
-
-								.field-item .section--hero .hero .hero-item-container .hero-text .btn.hero-btn:hover {
-									border-color: #240F6E;
-
-								}
-
-									.field-item .section--hero .hero .hero-item-container .hero-text .btn.hero-btn:hover:before {
-										width: 100%;
-									}
 		}
 /* Gradient Animation */
 @-webkit-keyframes Gradation-Ani {
@@ -552,27 +636,107 @@ Instead edit gulp/templates/sprite */
 }
 .field-item .section--package {
 		background-color: #F0F0F0;
-		padding-bottom: 0;
+		/* padding-bottom: 0; */
+		border-top: none;
 	}
+.field-item .section--package .package .section-head span {
+					display: block;
+				}
+.field-item .section--package .package .section-head span.highlight {
+						font-weight: 700;
+					}
 .field-item .section--package .package .flex-item {
 				-webkit-box-flex: 0;
-				    -ms-flex: 0 0 32%;
-				        flex: 0 0 32%;
-				max-width: 32%;
-				padding: 40px 15px;
+				    -ms-flex: 0 0 100%;
+				        flex: 0 0 100%;
+				max-width: 100%;
+				padding: 0 15px 15px 15px;
 			}
+/* &:nth-of-type(1) { order: 2; }
+				&:nth-of-type(2) { order: 1; }
+				&:nth-of-type(3) { order: 3; } */
+@media (min-width: 768px) {
+.field-item .section--package .package .flex-item {
+					-webkit-box-flex: 0;
+					    -ms-flex: 0 0 33.33333333%;
+					        flex: 0 0 33.33333333%;
+					max-width: 33.33333333%;
+					padding: 0 8px 15px 8px
+					/* &:nth-of-type(1) { order: 1; }
+					&:nth-of-type(2) { order: 2; }
+					&:nth-of-type(3) { order: 3; } */
+			}
+		}
+@media (min-width: 992px) {
+.field-item .section--package .package .flex-item {
+					padding: 0 15px 15px 15px
+			}
+		}
+/* &.feature {
+					flex: 0 0 100%;
+					max-width: 100%;
+					padding: 5px 15px;
+					@mixin sm-min {
+						flex: 0 0 33.33333333%;
+						max-width: 33.33333333%;
+						padding: 8px;
+					}
+					@mixin md-min {
+						flex: 0 0 36%;
+						max-width: 36%;
+						padding: 15px;
+					}
+				} */
 .field-item .section--package .package .flex-item .item-box {
 					background-color: #FFFFFF;
-					-webkit-box-shadow: -1px 90px 95px -62px rgba(0,0,0,.2), 0 25px 65px 0 rgba(0,0,0,0.05);
-					        box-shadow: -1px 90px 95px -62px rgba(0,0,0,.2), 0 25px 65px 0 rgba(0,0,0,0.05);
+					-webkit-box-shadow: 1px 1px 15px rgba(0,0,0,.1);
+					        box-shadow: 1px 1px 15px rgba(0,0,0,.1);
 					padding: 18px;
 					height: 100%;
 				}
+@media (min-width: 768px) {
+.field-item .section--package .package .flex-item .item-box {
+						-webkit-box-shadow: -1px 90px 95px -62px rgba(0,0,0,.2), 0 25px 65px 0 rgba(0,0,0,0.05);
+						        box-shadow: -1px 90px 95px -62px rgba(0,0,0,.2), 0 25px 65px 0 rgba(0,0,0,0.05)
+				}
+		}
 .field-item .section--package .package .flex-item .item-box .image-container {
 						position: relative;
 						overflow: hidden;
 						margin: -18px -18px 1.2em -18px;
 					}
+.field-item .section--package .package .flex-item .item-box .image-container:before {
+							content: '';
+							float: left;
+							padding-bottom: 42%;
+						}
+@media (min-width: 768px) {
+.field-item .section--package .package .flex-item .item-box .image-container:before {
+								padding-bottom: 62%
+						}
+		}
+@media (min-width: 992px) {
+.field-item .section--package .package .flex-item .item-box .image-container:before {
+								padding-bottom: 60%
+						}
+		}
+.field-item .section--package .package .flex-item .item-box .image-container:after {
+							content: '';
+							display: table;
+							clear: both;
+						}
+.field-item .section--package .package .flex-item .item-box .image-container .image-inner {
+							position: absolute;
+							width: 100%;
+							height: 100%;
+						}
+.field-item .section--package .package .flex-item .item-box .image-container .image-inner img {
+								position: absolute;
+								top: 50%;
+								left: 50%;
+								-webkit-transform: translate(-50%, -50%);
+								        transform: translate(-50%, -50%);
+							}
 .field-item .section--package .package .flex-item .item-box .image-container .title {
 							position: absolute;
 							width: 100%;
@@ -587,7 +751,6 @@ Instead edit gulp/templates/sprite */
 								    -ms-flex-align: end;
 								        align-items: flex-end;
 								color: #FFFFFF;
-								font-size: 15px;
 								background: rgba(25,20,43,.1);
 								background: -webkit-gradient(linear,left top, left bottom,color-stop(0, rgba(25,20,43,.1)),color-stop(50%, rgba(25,20,43,.1)),to(rgba(25,20,43,.75)));
 								background: linear-gradient(to bottom,rgba(25,20,43,.1) 0,rgba(25,20,43,.1) 50%,rgba(25,20,43,.75) 100%);
@@ -598,14 +761,39 @@ Instead edit gulp/templates/sprite */
 									    -ms-flex: 0 0 100%;
 									        flex: 0 0 100%;
 									max-width: 100%;
-									padding: 20px;
+									padding: 15px;
 								}
+@media (min-width: 992px) {
+.field-item .section--package .package .flex-item .item-box .image-container .title .overlay--inner {
+										padding: 20px
+								}
+		}
+.field-item .section--package .package .flex-item .item-box .image-container .title .overlay--inner .course-title {
+										font-weight: 600;
+										font-size: 14px;
+									}
+@media (min-width: 992px) {
+.field-item .section--package .package .flex-item .item-box .image-container .title .overlay--inner .course-title {
+											font-size: 15px
+									}
+		}
 .field-item .section--package .package .flex-item .item-box .image-container .title .overlay--inner .location {
-										margin-top: 0.25em;
-										font-size: 24px;
 										font-weight: 700;
 										text-transform: uppercase;
+										margin-top: 0.25em;
+										font-size: 18px;
 									}
+@media (min-width: 768px) {
+.field-item .section--package .package .flex-item .item-box .image-container .title .overlay--inner .location {
+											font-size: 20px
+									}
+		}
+@media (min-width: 992px) {
+.field-item .section--package .package .flex-item .item-box .image-container .title .overlay--inner .location {
+											margin-top: 0.25em;
+											font-size: 24px
+									}
+		}
 .field-item .section--package .package .flex-item .item-box .image-container .title .overlay--inner .more {
 										position: relative;
 										display: block;
@@ -640,9 +828,21 @@ Instead edit gulp/templates/sprite */
 										opacity: 1;
 										filter: alpha(opacity=100);
 									}
-.field-item .section--package .package .flex-item .item-box .desc-container {
-
-					}
+@media (max-width: 991px) {
+.field-item .section--package .package .flex-item .item-box .desc-container ul.bullet-points {
+								margin-bottom: 0.75em;
+								padding: 0 0 0 13px
+						}
+		}
+.field-item .section--package .package .flex-item .item-box .desc-container ul.bullet-points li {
+								line-height: 1.42857143;
+							}
+@media (max-width: 991px) {
+.field-item .section--package .package .flex-item .item-box .desc-container ul.bullet-points li {
+									font-size: 13px;
+									line-height: 1.28571428
+							}
+		}
 .field-item .section--package .package .flex-item .item-box .price-container {
 						text-align: center;
 						color: #404040;
@@ -652,37 +852,50 @@ Instead edit gulp/templates/sprite */
 						}
 .field-item .section--package .package .flex-item .item-box .price-container .price {
 							font-size: 20px;
+							color: #503F8B;
 							font-weight: 600;
 							text-transform: uppercase;
 						}
+.field-item .section--package .package .flex-item .item-box .price-container .price-info {
+							font-size: 13px;
+						}
+.field-item .section--package .package .flex-item .item-box .price-container .price-info .was {
+								text-decoration: line-through;
+							}
+.field-item .section--package .package .flex-item .item-box .price-container .price-info .divide {
+								color: #AAAAAA;
+							}
+.field-item .section--package .package .flex-item .item-box .price-container .price-info .save {
+								color: #E55302;
+								font-weight: 600;
+							}
+.field-item .section--package .package .flex-item .item-box .cta-container {
+						margin: 0.5em 0 0 0;
+					}
+@media (min-width: 992px) {
+.field-item .section--package .package .flex-item .item-box .cta-container {
+							margin: 1em 0
+					}
+		}
 .field-item .section--package .package .flex-item .item-box .cta-container a.btn {
 							min-width: auto;
 							max-width: 260px;
 							width: 100%;
+							margin: 3px 0 0 0;
 							border: 1px solid transparent;
 						}
 .field-item .section--package .package .flex-item .item-box .cta-container a.btn:hover {
 								border: 1px solid transparent;
 							}
-.field-item .section--package .package .flex-item.feature {
-					-webkit-box-flex: 0;
-					    -ms-flex: 0 0 36%;
-					        flex: 0 0 36%;
-					max-width: 36%;
-					padding: 15px;
-				}
-.field-item .section--package .package .flex-item.feature .item-box {
-						background-color: #FFFFFF;
-					}
 .field-item .section--package .package .note {
-				margin-top: 5em;
+				margin-top: 1em;
 				text-align: center;
 			}
 .field-item .section--package .package .note a {
-					font-size: 18px;
+					font-size: 15px;
 				}
 .field-item .section--package .package .note .icon-wrapper {
-					margin-top: 2em;
+					margin-top: 1em;
 				}
 .field-item .section--package .package .note .icon-wrapper a {
 						display: inline-block;
@@ -700,29 +913,73 @@ Instead edit gulp/templates/sprite */
 							padding-top: 20px;
 						}
 .field-item .section--process {
-		background-image: url('../../assets/images/summer-bg.jpg');
-		background-attachment: fixed;
+		background-image: url('//assetlibs.kaplaninternational.com/_assets/summer2018/images/summer2018-process-xs.jpg');
 	}
+@media (min-width: 768px) {
+.field-item .section--process {
+			background-attachment: fixed;
+			background-image: url('//assetlibs.kaplaninternational.com/_assets/summer2018/images/summer2018-process-sm.jpg')
+	}
+		}
+@media (min-width: 992px) {
+.field-item .section--process {
+			background-image: url('//assetlibs.kaplaninternational.com/_assets/summer2018/images/summer2018-process-md.jpg')
+	}
+		}
+@media (min-width: 1200px) {
+.field-item .section--process {
+			background-image: url('//assetlibs.kaplaninternational.com/_assets/summer2018/images/summer2018-process-lg.jpg')
+	}
+		}
+@media
+			only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 1300px),
+			only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 1300px),
+			only screen and (        min-device-pixel-ratio: 2)      and (min-width: 1300px),
+			only screen and (                -webkit-min-device-pixel-ratio: 2) and (min-width: 1300px),
+			only screen and (                min-resolution: 192dpi) and (min-width: 1300px),
+			only screen and (                -webkit-min-device-pixel-ratio: 2)  and (min-width: 1300px),
+			only screen and (                min-resolution: 2dppx)  and (min-width: 1300px) {
+.field-item .section--process {
+			background-image: url('//assetlibs.kaplaninternational.com/_assets/summer2018/images/summer2018-process@2x.jpg')
+	}
+		}
+@media (max-width: 767px) {
+.field-item .section--process .process .flex-container.grid {
+					margin-top: -30px
+			}
+		}
 .field-item .section--process .process .flex-item {
 				-webkit-box-flex: 0;
-				    -ms-flex: 0 0 33.33333333%;
-				        flex: 0 0 33.33333333%;
-				max-width: 33.33333333%;
+				    -ms-flex: 0 0 100%;
+				        flex: 0 0 100%;
+				max-width: 100%;
+				padding: 0 15px 15px 15px;
+				
 			}
 .field-item .section--process .process .flex-item .item-box {
-					background: radial-gradient(ellipse at center,  rgba(255,255,255,0.4) 0%,rgba(255,255,255,0) 80%,rgba(255,255,255,0) 100%);
+					background: radial-gradient(ellipse at center,  rgba(242,242,213,0.8) 0%,rgba(242,242,213,0) 80%,rgba(242,242,213,0) 100%);
 					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33a5ffeb', endColorstr='#00a5ffeb',GradientType=1 );
 					position: relative;
-					padding: 18px;
 					height: 100%;
 					text-align: center;
+					padding: 0 10px;
 				}
 .field-item .section--process .process .flex-item .item-box .icon-container {
 						display: inline-block;
 						background: #FFFFFF;
 						margin-bottom: 1.5em;
 						border-radius: 50%;
+						-webkit-box-shadow: 0px 8px 18px 0px rgba(0, 0, 0, 0.15);
+						        box-shadow: 0px 8px 18px 0px rgba(0, 0, 0, 0.15);
 					}
+@media (max-width: 767px) {
+.field-item .section--process .process .flex-item .item-box .icon-container {
+							-webkit-transform: scale(0.8);
+							        transform: scale(0.8);
+							margin: 0 0 0.5em -1.25em;
+							float: left
+					}
+		}
 .field-item .section--process .process .flex-item .item-box .icon-container .sprite-icon {
 							display: inline-block;
 							-webkit-transform: scale(0.6);
@@ -730,47 +987,146 @@ Instead edit gulp/templates/sprite */
 						}
 .field-item .section--process .process .flex-item .item-box .desc-container {
 						position: relative;
+						text-shadow: 0px 2px 12px rgba(242,242,213,1);
 					}
+@media (max-width: 767px) {
+.field-item .section--process .process .flex-item .item-box .desc-container {
+							text-align: left;
+							padding: 30px 8px 5px 8px;
+							overflow: hidden
+					}
+		}
 .field-item .section--process .process .flex-item .item-box .desc-container * {
 							color: #303030;
 						}
 .field-item .section--process .process .flex-item .item-box .desc-container .title {
-							font-size: 18px;
-							font-weight: 700;
+							font-size: 14px;
+							font-weight: 800;
 							text-transform: uppercase;
 							margin: 0 0 0.2em 0;
 						}
+@media (min-width: 768px) {
+.field-item .section--process .process .flex-item .item-box .desc-container .title {
+								font-size: 16px
+						}
+		}
+@media (min-width: 992px) {
+.field-item .section--process .process .flex-item .item-box .desc-container .title {
+								font-size: 18px
+						}
+		}
 .field-item .section--process .process .flex-item .item-box .desc-container .strapline {
 							position: relative;
-							font-weight: 700;
-							margin-bottom: 20px;
+							font-size: 13px;
+							font-weight: 600;
+							margin-bottom: 0.75em;
 						}
 @media (min-width: 768px) {
-							.field-item .section--process .process .flex-item:nth-child(2) .item-box:before, .field-item .section--process .process .flex-item:nth-child(3) .item-box:before {
-								position: absolute;
-								content: "";
+.field-item .section--process .process .flex-item .item-box .desc-container .strapline {
+								font-size: 14px
+						}
+		}
+@media (min-width: 992px) {
+.field-item .section--process .process .flex-item .item-box .desc-container .strapline {
+								font-size: 15px
+						}
+		}
+@media (max-width: 767px) {
+.field-item .section--process .process .flex-item .item-box .desc-container .strapline {
+								margin-bottom: 0.2em;
+								line-height: 1.2
+						}
+		}
+.field-item .section--process .process .flex-item .item-box .desc-container .desc {
+							display: none;
+							margin: 0;
+							font-size: 12px;
+						}
+@media (min-width: 768px) {
+.field-item .section--process .process .flex-item .item-box .desc-container .desc {
+								display: block;
+								font-size: 13px
+						}
+		}
+@media (min-width: 992px) {
+.field-item .section--process .process .flex-item .item-box .desc-container .desc {
+								font-size: 14px
+						}
+		}
+@media (min-width: 768px) {
+.field-item .section--process .process .flex-item {
+					-webkit-box-flex: 0;
+					    -ms-flex: 0 0 33.33333333%;
+					        flex: 0 0 33.33333333%;
+					max-width: 33.33333333%
+				
+			}
+		}
+.field-item .section--process .process .flex-item:nth-child(2) .item-box:before, .field-item .section--process .process .flex-item:nth-child(3) .item-box:before {
+							position: absolute;
+							content: "";
+							width: 100%;
+							height: 2px;
+							top: -15px;
+							left: 0;
+							border-top: 1px dotted rgba(0,0,0,0.25);
+						}
+@media (min-width: 768px) {
+.field-item .section--process .process .flex-item:nth-child(2) .item-box:before, .field-item .section--process .process .flex-item:nth-child(3) .item-box:before {
 								width: 2px;
-								height: 80%;
+								height: 100%;
 								border-left: 1px dotted rgba(0,0,0,0.25);
 								left: -16px;
-								top: 10%;
-							}
-								.field-item .section--process .process .flex-item:nth-child(2) .item-box .desc-container:before, .field-item .section--process .process .flex-item:nth-child(3) .item-box .desc-container:before {
-									content: "+";
-									position: absolute;
-									width: 60px;
-									height: 60px;
-									line-height: 60px;
-									left: 0;
-									top: 0;
-									font-size: 60px;
-									margin-left: -63px;
-									color: #0A5E85;
-								}
+								top: 0
+						}
 		}
+.field-item .section--process .process .flex-item:nth-child(2) .item-box:after, .field-item .section--process .process .flex-item:nth-child(3) .item-box:after {
+							position: absolute;
+							content: "+";
+							width: 100%;
+							height: 48px;
+							top: -49px;
+							left: 0;
+							font-size: 48px;
+							color: #0A5E85;
+						}
+@media (min-width: 768px) {
+.field-item .section--process .process .flex-item:nth-child(2) .item-box:after, .field-item .section--process .process .flex-item:nth-child(3) .item-box:after {
+								width: 60px;
+								height: 60px;
+								left: -45px;
+								top: calc(50% - 30px);
+								font-size: 60px;
+								line-height: 60px
+						}
+		}
+.field-item .section--process .process .cta-container {
+				margin-bottom: 0;
+			}
 .field-item .section--process .process .cta-container p {
 					color: #404040;
 				}
+.field-item .section--other-product {
+		background-image: url('//assetlibs.kaplaninternational.com/_assets/summer2018/images/summer2018-pattern-xs.jpg');
+	}
+@media (min-width: 768px) {
+.field-item .section--other-product {
+			background-attachment: fixed;
+			background-image: url('//assetlibs.kaplaninternational.com/_assets/summer2018/images/summer2018-pattern-lg.jpg')
+	}
+		}
+@media
+			only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 1300px),
+			only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 1300px),
+			only screen and (        min-device-pixel-ratio: 2)      and (min-width: 1300px),
+			only screen and (                -webkit-min-device-pixel-ratio: 2) and (min-width: 1300px),
+			only screen and (                min-resolution: 192dpi) and (min-width: 1300px),
+			only screen and (                -webkit-min-device-pixel-ratio: 2)  and (min-width: 1300px),
+			only screen and (                min-resolution: 2dppx)  and (min-width: 1300px) {
+.field-item .section--other-product {
+			background-image: url('//assetlibs.kaplaninternational.com/_assets/summer2018/images/summer2018-pattern@2x.jpg')
+	}
+		}
 .field-item .section--other-product .other-product .course-school--container {
 				position: relative;
 			}
@@ -782,27 +1138,100 @@ Instead edit gulp/templates/sprite */
 				}
 .field-item .section--other-product .other-product .course-school--container .panel.flex-item {
 						-webkit-box-flex: 0;
-						    -ms-flex: 0 0 50%;
-						        flex: 0 0 50%;
-						max-width: 50%;
+						    -ms-flex: 0 0 100%;
+						        flex: 0 0 100%;
+						max-width: 100%;
 						margin: 0;
-						padding: 0 15px;
+						padding: 5px 15px;
 					}
+@media (min-width: 768px) {
+.field-item .section--other-product .other-product .course-school--container .panel.flex-item {
+							-webkit-box-flex: 0;
+							    -ms-flex: 0 0 50%;
+							        flex: 0 0 50%;
+							max-width: 50%;
+							padding: 0 15px
+					}
+		}
 .field-item .section--other-product .other-product .course-school--container .panel .panel-heading,
 					.field-item .section--other-product .other-product .course-school--container .panel h4.panel-title {
 						padding: 0;
 						margin: 0;
-						line-height: 1.42857143;
 					}
 .field-item .section--other-product .other-product .course-school--container .panel .panel-heading a, .field-item .section--other-product .other-product .course-school--container .panel h4.panel-title a {
 							position: relative;
 							display: block;
 							padding: 20px;
-							min-height: 200px;
+							min-height: 180px;
 							color: #FFFFFF;
 							text-decoration: none;
-
+							-webkit-filter: grayscale(100%);
+							        filter: grayscale(100%);
 						}
+@media (min-width: 768px) {
+.field-item .section--other-product .other-product .course-school--container .panel .panel-heading a, .field-item .section--other-product .other-product .course-school--container .panel h4.panel-title a {
+								min-height: 200px
+						}
+		}
+.field-item .section--other-product .other-product .course-school--container .panel .panel-heading a .image-box__btn-inner, .field-item .section--other-product .other-product .course-school--container .panel h4.panel-title a .image-box__btn-inner {
+								position: absolute;
+								display: block;
+								left: 0;
+								bottom: 0;
+								width: 100%;
+								padding: 1.5em;
+							}
+.field-item .section--other-product .other-product .course-school--container .panel .panel-heading a .image-box__btn-inner .image-box__title, .field-item .section--other-product .other-product .course-school--container .panel h4.panel-title a .image-box__btn-inner .image-box__title {
+									display: block;
+									font-size: 16px;
+									text-transform: uppercase;
+									margin-bottom: 0.25em;
+									font-weight: 700;
+								}
+@media (min-width: 768px) {
+.field-item .section--other-product .other-product .course-school--container .panel .panel-heading a .image-box__btn-inner .image-box__title, .field-item .section--other-product .other-product .course-school--container .panel h4.panel-title a .image-box__btn-inner .image-box__title {
+										margin-bottom: 0.5em;
+										font-size: 20px
+								}
+		}
+@media (min-width: 992px) {
+.field-item .section--other-product .other-product .course-school--container .panel .panel-heading a .image-box__btn-inner .image-box__title, .field-item .section--other-product .other-product .course-school--container .panel h4.panel-title a .image-box__btn-inner .image-box__title {
+										font-size: 24px
+								}
+		}
+.field-item .section--other-product .other-product .course-school--container .panel .panel-heading a .image-box__btn-inner .image-box__desc, .field-item .section--other-product .other-product .course-school--container .panel h4.panel-title a .image-box__btn-inner .image-box__desc {
+									font-size: 13px;
+									font-weight: 400;
+								}
+@media (min-width: 992px) {
+.field-item .section--other-product .other-product .course-school--container .panel .panel-heading a .image-box__btn-inner .image-box__desc, .field-item .section--other-product .other-product .course-school--container .panel h4.panel-title a .image-box__btn-inner .image-box__desc {
+										font-size: 14px
+								}
+		}
+.field-item .section--other-product .other-product .course-school--container .panel .panel-heading a .image-box__btn-inner .image-box__link, .field-item .section--other-product .other-product .course-school--container .panel h4.panel-title a .image-box__btn-inner .image-box__link {
+									margin-top: 0.5em;
+									font-size: 13px;
+								}
+.field-item .section--other-product .other-product .course-school--container .panel .panel-heading a .image-box__btn-inner .image-box__link .more, .field-item .section--other-product .other-product .course-school--container .panel h4.panel-title a .image-box__btn-inner .image-box__link .more {
+										display: none;
+									}
+.field-item .section--other-product .other-product .course-school--container .panel .panel-heading a .image-box__btn-inner .image-box__link .more:before, .field-item .section--other-product .other-product .course-school--container .panel h4.panel-title a .image-box__btn-inner .image-box__link .more:before {
+											content: "\e683";
+											font-family: kie;
+											display: inline-block;
+											margin-right: 4px;
+											vertical-align: -2px;
+										}
+.field-item .section--other-product .other-product .course-school--container .panel .panel-heading a .image-box__btn-inner .image-box__link .less, .field-item .section--other-product .other-product .course-school--container .panel h4.panel-title a .image-box__btn-inner .image-box__link .less {
+										display: block;
+										border-bottom: 2px solid transparent;
+									}
+.field-item .section--other-product .other-product .course-school--container .panel .panel-heading a .image-box__btn-inner .image-box__link .less:before, .field-item .section--other-product .other-product .course-school--container .panel h4.panel-title a .image-box__btn-inner .image-box__link .less:before {
+											content: "\e682";
+											font-family: kie;
+											display: inline-block;
+											margin-right: 4px;
+										}
 .field-item .section--other-product .other-product .course-school--container .panel .panel-heading a:before, .field-item .section--other-product .other-product .course-school--container .panel h4.panel-title a:before {
 								display: block;
 								position: absolute;
@@ -825,13 +1254,17 @@ Instead edit gulp/templates/sprite */
 .field-item .section--other-product .other-product .course-school--container .panel .panel-heading a:after, .field-item .section--other-product .other-product .course-school--container .panel h4.panel-title a:after {
 								content: "";
 								position: absolute;
-								left: 20%;
+								left: 54px;
 								bottom: -2px;
 								width: 0;
 								height: 0;
 								border-style: solid;
 								border-width: 0 15px 20px 15px;
 								border-color: transparent transparent #EEEEEE transparent;
+							}
+.field-item .section--other-product .other-product .course-school--container .panel .panel-heading a.collapsed, .field-item .section--other-product .other-product .course-school--container .panel h4.panel-title a.collapsed {
+								-webkit-filter: grayscale(0);
+								        filter: grayscale(0);
 							}
 .field-item .section--other-product .other-product .course-school--container .panel .panel-heading a.collapsed:before, .field-item .section--other-product .other-product .course-school--container .panel h4.panel-title a.collapsed:before {
 									background: rgba(25,20,43,.1);
@@ -842,40 +1275,33 @@ Instead edit gulp/templates/sprite */
 .field-item .section--other-product .other-product .course-school--container .panel .panel-heading a.collapsed:after, .field-item .section--other-product .other-product .course-school--container .panel h4.panel-title a.collapsed:after {
 									content: none;
 								}
+.field-item .section--other-product .other-product .course-school--container .panel .panel-heading a.collapsed .image-box__link .more, .field-item .section--other-product .other-product .course-school--container .panel h4.panel-title a.collapsed .image-box__link .more {
+										display: inline-block;
+										color: #00E4FF;
+										border-bottom: 2px solid #00E4FF;
+									}
+.field-item .section--other-product .other-product .course-school--container .panel .panel-heading a.collapsed .image-box__link .less, .field-item .section--other-product .other-product .course-school--container .panel h4.panel-title a.collapsed .image-box__link .less {
+										display: none;
+									}
 .field-item .section--other-product .other-product .course-school--container .panel .panel-heading a:hover:before, .field-item .section--other-product .other-product .course-school--container .panel h4.panel-title a:hover:before {
 									background-color: rgba(36,15,110,.6);
 								}
 .field-item .section--other-product .other-product .course-school--container .panel .panel-heading a.image-box--course, .field-item .section--other-product .other-product .course-school--container .panel h4.panel-title a.image-box--course {
-								background-image: url(https://assetlibs.kaplaninternational.com/_assets/about-benefits/images/hero-course.jpg);
+								background-image: url('//assetlibs.kaplaninternational.com/_assets/about-benefits/images/hero-course.jpg');
 							}
 .field-item .section--other-product .other-product .course-school--container .panel .panel-heading a.image-box--school, .field-item .section--other-product .other-product .course-school--container .panel h4.panel-title a.image-box--school {
-								background-image: url(https://assetlibs.kaplaninternational.com/_assets/about-benefits/images/hero-destination-us.jpg);
+								background-image: url('//assetlibs.kaplaninternational.com/_assets/about-benefits/images/hero-destination-us.jpg');
 							}
-.field-item .section--other-product .other-product .course-school--container .panel .panel-heading a .image-box__btn-inner, .field-item .section--other-product .other-product .course-school--container .panel h4.panel-title a .image-box__btn-inner {
-								position: absolute;
-								display: block;
-								left: 0;
-								bottom: 0;
-								width: 100%;
-								padding: 1.4em;
-							}
-.field-item .section--other-product .other-product .course-school--container .panel .panel-heading a .image-box__btn-inner .image-box__title, .field-item .section--other-product .other-product .course-school--container .panel h4.panel-title a .image-box__btn-inner .image-box__title {
-									display: block;
-									font-size: 18px;
-									text-transform: uppercase;
-									font-weight: 700;
-									font-size: 24px;
-								}
-.field-item .section--other-product .other-product .course-school--container .panel .panel-heading a .image-box__btn-inner .image-box__desc, .field-item .section--other-product .other-product .course-school--container .panel h4.panel-title a .image-box__btn-inner .image-box__desc {
-									font-size: 14px;
-									font-weight: 400;
-								}
 .field-item .section--other-product .other-product .course-school--container .panel .panel-collapse {
 						position: relative;
-						width: calc(200% + 30px);
 						-webkit-box-shadow: 0px 30px 100px -42px rgba(0,0,0,.4);
 						        box-shadow: 0px 30px 100px -42px rgba(0,0,0,.4);
 					}
+@media (min-width: 768px) {
+.field-item .section--other-product .other-product .course-school--container .panel .panel-collapse {
+							width: calc(200% + 30px)
+					}
+		}
 .field-item .section--other-product .other-product .course-school--container .panel .panel-collapse .panel-body {
 							background-color: #EEEEEE;
 							padding: 30px;
@@ -892,6 +1318,11 @@ Instead edit gulp/templates/sprite */
 								max-width: 100%;
 								padding: 15px;
 							}
+@media (min-width: 768px) {
+.field-item .section--other-product .other-product .course-school--container .panel .panel-collapse .panel-body .flex-item {
+									padding: 5px 15px
+							}
+		}
 .field-item .section--other-product .other-product .course-school--container .panel .panel-collapse .panel-body .flex-item .item-box {
 									height: 100%;
 								}
@@ -901,34 +1332,50 @@ Instead edit gulp/templates/sprite */
 									}
 .field-item .section--other-product .other-product .course-school--container .panel .panel-collapse .panel-body .flex-item .item-box .title {
 										position: relative;
-										font-size: 15px;
-										font-weight: 700;
-										text-transform: uppercase;
 									}
-.field-item .section--other-product .other-product .course-school--container .panel .panel-collapse .panel-body .flex-item .item-box .title span {
-											position: absolute;
-											display: inline-block;
-											left: 0;
-											top: 0;
-											padding: 0 12px 12px 0;
-											background-color: #EEEEEE;
+.field-item .section--other-product .other-product .course-school--container .panel .panel-collapse .panel-body .flex-item .item-box .title a {
+											color: #404040;
+											font-size: 15px;
+											font-weight: 700;
+											text-transform: uppercase;
 										}
-.field-item .section--other-product .other-product .course-school--container .panel .panel-collapse .panel-body .flex-item .item-box .course-price ul {
+.field-item .section--other-product .other-product .course-school--container .panel .panel-collapse .panel-body .flex-item .item-box .title a span {
+												position: absolute;
+												display: inline-block;
+												left: 0;
+												top: 0;
+												padding: 0 12px 8px 0;
+												color: #404040;
+												font-size: 15px;
+												font-weight: 700;
+												text-transform: uppercase;
+												background-color: #EEEEEE;
+											}
+.field-item .section--other-product .other-product .course-school--container .panel .panel-collapse .panel-body .flex-item .item-box .bullet-points,
+									.field-item .section--other-product .other-product .course-school--container .panel .panel-collapse .panel-body .flex-item .item-box .desc {
+										font-size: 13px;
+										margin-bottom: 0.5em;
+									}
+/* .course-price {
+										ul {
 											padding: 6px 0 0 0;
-										}
-.field-item .section--other-product .other-product .course-school--container .panel .panel-collapse .panel-body .flex-item .item-box .course-price ul li {
+
+											li {
 												padding: 4px;
 												margin-bottom: 0;
-												border-top: 1px solid #DDDDDD;
-											}
-.field-item .section--other-product .other-product .course-school--container .panel .panel-collapse .panel-body .flex-item .item-box .course-price ul li:before {
+												border-top: 1px solid $color-grey-e;
+												&:before {
 													content: none;
 												}
-.field-item .section--other-product .other-product .course-school--container .panel .panel-collapse .panel-body .flex-item .item-box .course-price ul li .price {
-													font-weight: 700;
+												.price {
+													font-weight: $font-weight-bold;
 												}
+											}
+										}
+									} */
 .field-item .section--other-product .other-product .course-school--container .panel .panel-collapse .panel-body .flex-item .item-box .link {
 										display: inline-block;
+										font-weight: 600;
 										font-size: 13px;
 										border-bottom: 1px solid #007DB3;
 										text-decoration: none;
@@ -936,24 +1383,20 @@ Instead edit gulp/templates/sprite */
 @media (min-width: 768px) {
 .field-item .section--other-product .other-product .course-school--container .panel .panel-collapse .panel-body .flex-item {
 									-webkit-box-flex: 0;
-									    -ms-flex: 0 0 50%;
-									        flex: 0 0 50%;
-									max-width: 50%
+									    -ms-flex: 0 0 33.33333333%;
+									        flex: 0 0 33.33333333%;
+									max-width: 33.33333333%
 							}
-		}
-@media (min-width: 992px) {
-.field-item .section--other-product .other-product .course-school--container .panel .panel-collapse .panel-body .flex-item {
-									-webkit-box-flex: 0;
-									    -ms-flex: 0 0 25%;
-									        flex: 0 0 25%;
-									max-width: 25%
-							}
-		}
-@media (min-width: 1200px) {
 		}
 .field-item .section--other-product .other-product .course-school--container .panel .panel-collapse .panel-body .flex-item {
-								border-left: 1px solid rgba(0,0,0,0.1);
+								border-top: 1px solid rgba(0,0,0,0.1);
 							}
+@media (min-width: 768px) {
+.field-item .section--other-product .other-product .course-school--container .panel .panel-collapse .panel-body .flex-item {
+									border-top: none;
+									border-left: 1px solid rgba(0,0,0,0.1)
+							}
+		}
 .field-item .section--other-product .other-product .course-school--container .panel .panel-collapse .panel-body .flex-item:first-child {
 									border-left: none;
 								}
@@ -963,9 +1406,11 @@ Instead edit gulp/templates/sprite */
 								right: 15px;
 								font-size: 18px;
 							}
+@media (min-width: 768px) {
 .field-item .section--other-product .other-product .course-school--container .panel:nth-child(2) .panel-collapse {
-							margin-left: calc(-100% - 30px);
+								margin-left: calc(-100% - 30px)
 						}
+		}
 .field-item .section--difference .difference .flex-item {
 				-webkit-box-flex: 0;
 				    -ms-flex: 0 0 50%;
@@ -987,13 +1432,441 @@ Instead edit gulp/templates/sprite */
 .field-item .section--difference .difference .flex-item .item-box {
 					text-align: center;
 				}
-.field-item .section--difference .difference .flex-item .item-box .desc {
-						padding: 10px 15px;
-						font-size: 15px;
+.field-item .section--difference .difference .flex-item .item-box .icon-image {
+						margin: 0 auto;
+						width: 60px;
 					}
-div.course-form {
-		background-color: #E0E0E0;
+@media (min-width: 992px) {
+.field-item .section--difference .difference .flex-item .item-box .icon-image {
+							width: 72px
+					}
+		}
+.field-item .section--difference .difference .flex-item .item-box .desc {
+						padding: 4px 4px 24px;
+						font-size: 13px;
+						line-height: 1.28571428;
+						
+					}
+@media (min-width: 768px) {
+.field-item .section--difference .difference .flex-item .item-box .desc {
+							padding: 10px 15px;
+							font-size: 14px
+						
+					}
+		}
+@media (min-width: 992px) {
+.field-item .section--difference .difference .flex-item .item-box .desc {
+							font-size: 15px
+						
+					}
+		}
+section.block-webform {
+		padding: 30px 0;
+		background-image: url('//assetlibs.kaplaninternational.com/_assets/summer2018/images/summer2018-form-xs.jpg');
+		background-position: center;
+		background-size: cover;
 	}
+@media (min-width: 768px) {
+section.block-webform {
+			padding: 4% 0;
+			background-attachment: fixed;
+			background-image: url('//assetlibs.kaplaninternational.com/_assets/summer2018/images/summer2018-form-xs.jpg')
+	}
+		}
+@media (min-width: 992px) {
+section.block-webform {
+			background-image: url('//assetlibs.kaplaninternational.com/_assets/summer2018/images/summer2018-form-md.jpg')
+	}
+		}
+@media (min-width: 1200px) {
+section.block-webform {
+			background-image: url('//assetlibs.kaplaninternational.com/_assets/summer2018/images/summer2018-form-md.jpg')
+	}
+		}
+section.block-webform .block-title,
+		section.block-webform .block-content {
+			margin-left: 20px;
+			margin-right: 20px;
+		}
+@media (min-width: 768px) {
+section.block-webform .block-title,
+		section.block-webform .block-content {
+				max-width: 640px;
+				margin-left: auto;
+				margin-right: auto
+		}
+		}
+@media (min-width: 992px) {
+section.block-webform .block-title,
+		section.block-webform .block-content {
+				max-width: 720px
+		}
+		}
+@media (min-width: 1200px) {
+section.block-webform .block-title,
+		section.block-webform .block-content {
+				max-width: 800px
+		}
+		}
+section.block-webform .block-title {
+			margin-bottom: 1em;
+			color: #202020;
+			text-transform: uppercase;
+			text-align: center;
+			font-size: 24px;
+		}
+@media (min-width: 768px) {
+section.block-webform .block-title {
+				font-size: 26px
+		}
+		}
+@media (min-width: 992px) {
+section.block-webform .block-title {
+				font-size: 28px
+		}
+		}
+@media (min-width: 1200px) {
+section.block-webform .block-title {
+				font-size: 32px
+		}
+		}
+section.block-webform .webform-client-form > div > .webform-component-checkboxes {
+					width: 100%;
+					margin-bottom: 0;
+					color: #404040;
+				}
+section.block-webform .webform-client-form > div > .webform-component-checkboxes input[type="checkbox"] {
+						width: 17px;
+						height: 17px;
+						top: -2px;
+					}
+section.block-webform .webform-client-form > div:before,
+			section.block-webform .webform-client-form > div:after {
+				content: " ";
+				display: table
+			}
+section.block-webform .webform-client-form > div:after {
+				clear: both
+			}
+section.block-webform .webform-client-form fieldset {
+				border: none;
+				-webkit-box-shadow: rgba(0, 0, 0, 0.247059) 0 5px 18px 0;
+				        box-shadow: rgba(0, 0, 0, 0.247059) 0 5px 18px 0;
+				margin-bottom: 35px;
+			}
+section.block-webform .webform-client-form fieldset.panel-default > .panel-heading {
+						background: #232977;
+						font-weight: 700;
+						font-size: 16px;
+						letter-spacing: .01em;
+						color: #FFFFFF;
+					}
+section.block-webform .webform-client-form fieldset.panel-default > .panel-heading .panel-title {
+							font-size: 15px;
+						}
+@media (min-width: 768px) {
+section.block-webform .webform-client-form fieldset.panel-default > .panel-heading .panel-title {
+								font-size: 16px
+						}
+		}
+section.block-webform .webform-client-form fieldset.panel {
+					background-color: rgba(255,255,255,0.9);
+				}
+section.block-webform .webform-client-form fieldset.panel .webform-component {
+						margin-bottom: 1.25em;
+					}
+section.block-webform .webform-client-form fieldset.panel .webform-component label {
+							font-weight: 400;
+							color: #202020;
+						}
+section.block-webform .webform-client-form fieldset.panel .webform-component input, section.block-webform .webform-client-form fieldset.panel .webform-component button, section.block-webform .webform-client-form fieldset.panel .webform-component select, section.block-webform .webform-client-form fieldset.panel .webform-component textarea {
+							font-size: 14px;
+							height: auto;
+							min-height: 38px;
+							line-height: normal;
+						}
+section.block-webform .webform-client-form fieldset.panel .webform-component textarea.form-control {
+							line-height: 1.5;
+						}
+@media (min-width: 768px) {
+section.block-webform .webform-client-form fieldset.panel .panel-body {
+							padding: 2em
+					}
+		}
+section.block-webform .webform-client-form fieldset label {
+					display: block;
+					float: none;
+					width: 100%;
+					font-weight: 700;
+					min-height: 0;
+				}
+section.block-webform .webform-client-form fieldset .webform-component {
+					display: block;
+					float: left;
+					width: 100%;
+					margin-bottom: 33px;
+				}
+section.block-webform .webform-client-form fieldset .webform-component:last-child {
+						margin-bottom: 0;
+					}
+section.block-webform .webform-client-form fieldset .webform-component .description {
+						width: 100%;
+						float: none;
+						font-size: 12px;
+					}
+section.block-webform .webform-client-form fieldset .webform-component>.webform-datepicker,
+				section.block-webform .webform-client-form fieldset .webform-component>select,
+				section.block-webform .webform-client-form fieldset .webform-component>.form-textarea-wrapper,
+				section.block-webform .webform-client-form fieldset .webform-component>input {
+					width: 100%;
+					float: none;
+					clear: both;
+				}
+section.block-webform .webform-client-form fieldset .webform-datepicker:before,
+				section.block-webform .webform-client-form fieldset .webform-datepicker:after {
+					content: " ";
+					display: table;
+				}
+section.block-webform .webform-client-form fieldset .webform-datepicker:after {
+					clear: both;
+				}
+section.block-webform .webform-client-form fieldset .webform-datepicker:before,
+				section.block-webform .webform-client-form fieldset .webform-datepicker:after {
+					content: " ";
+					display: table;
+				}
+section.block-webform .webform-client-form fieldset .webform-datepicker:after {
+					clear: both;
+				}
+section.block-webform .webform-client-form fieldset .webform-datepicker .form-type-select,
+				section.block-webform .webform-client-form fieldset .webform-component {
+					position: relative;
+					display: inline-block;
+				}
+section.block-webform .webform-client-form fieldset .webform-datepicker .form-type-select select,
+				section.block-webform .webform-client-form fieldset .webform-component select {
+					padding-right: 33px;
+					background: #fff url('//cdn.kaplaninternational.com/profiles/base_drupal_build/themes/kis_theme/images/select-arrow.png') right 6px center no-repeat;
+				}
+section.block-webform .webform-client-form fieldset .webform-component-date .form-group {
+					margin-bottom: 0;
+				}
+section.block-webform .webform-client-form fieldset .webform-datepicker .form-type-select::before,
+				section.block-webform .webform-client-form fieldset .webform-component-select::before {
+					display: none;
+					position: absolute;
+					bottom: 7px;
+					height: 20px;
+					right: 29px;
+					width: 1px;
+					content: " ";
+					background: #ddd;
+				}
+section.block-webform .webform-client-form fieldset .webform-datepicker .form-type-select {
+					float: left;
+				}
+section.block-webform .webform-client-form fieldset .webform-datepicker .form-type-select::before {
+					right: 31px;
+				}
+section.block-webform .webform-client-form fieldset .webform-datepicker .webform-calendar-icon {
+					vertical-align: top;
+					float: left;
+				}
+section.block-webform .webform-client-form fieldset .webform-component--step-1--Questions-and-Comments--c-sfd-1454655804 .radio {
+					display: inline-block
+				}
+section.block-webform .webform-client-form fieldset .webform-component--step-2--Date-of-Birth--c-sfd-1463042328 .webform-container-inline {
+					width: 100%
+				}
+section.block-webform .webform-client-form fieldset div[class*='webform-component--step-1--Questions-and-Comments'] {
+					width: 100%
+				}
+section.block-webform .webform-client-form fieldset.webform-component-fieldset div[class*='fieldset--Questions-and-Comments'],
+					section.block-webform .webform-client-form fieldset.webform-component-fieldset div[class*='fieldset--Brochure-Downloaded'] {
+						width: 100%;
+					}
+@media (max-width: 1199px) {
+						section.block-webform .webform-client-form fieldset.webform-component-fieldset div[class*='webform-component--fieldset--Preferred-Start-Date'] {
+							width: 100%
+						}
+		}
+@media (min-width: 1200px) {
+						section.block-webform .webform-client-form fieldset.webform-component-fieldset .webform-component.webform-component--fieldset--Brochure-Downloaded--c-sfd-1407249818,
+						section.block-webform .webform-client-form fieldset.webform-component-fieldset .webform-component.webform-component--fieldset--Brochure-Downloaded--c-sfd-1407249854 {
+							width: 47%
+						}
+		}
+@media (min-width: 992px) and (max-width: 1199px) {
+						section.block-webform .webform-client-form fieldset.webform-component-fieldset .webform-component.webform-component--fieldset--Brochure-Downloaded--c-sfd-1407249818,
+						section.block-webform .webform-client-form fieldset.webform-component-fieldset .webform-component.webform-component--fieldset--Brochure-Downloaded--c-sfd-1407249854 {
+							width: 49%
+						}
+		}
+@media (max-width: 1199px) {
+					section.block-webform .webform-client-form fieldset fieldset div[class*='webform-component--step-1--Preferred-Start-Date'],
+					section.block-webform .webform-client-form fieldset fieldset div[class*='webform-component--step-1--Preferred-Contact-Date'] {
+						width: 100%;
+					}
+		}
+@media (max-width: 767px) {
+					section.block-webform .webform-client-form fieldset .webform-datepicker .form-type-select .form-select {
+						padding-right: 16px;
+						padding-left: 7px;
+						background-position: right 1px center;
+					}
+		}
+@media (min-width: 768px) {
+					section.block-webform .webform-client-form fieldset .webform-datepicker .form-type-select::before,
+					section.block-webform .webform-client-form fieldset .webform-component-select::before {
+						display: block;
+					}
+		}
+@media (min-width: 992px) and (max-width: 1199px) {
+					section.block-webform .webform-client-form fieldset .left-component {
+						margin-right: 2%
+					}
+		}
+@media (min-width: 1200px) {
+					section.block-webform .webform-client-form fieldset .webform-component {
+						width: 47%;
+					}
+					section.block-webform .webform-client-form fieldset .webform-datepicker .form-type-select .form-select {
+						padding-right: 30px;
+						padding-left: 8px;
+					}
+					section.block-webform .webform-client-form fieldset .left-component {
+						margin-right: 6%;
+					}
+		}
+section.block-webform .webform-client-form .icon-ki-calendar:before {
+				content: " ";
+				left: 0;
+				top: 2px;
+				width: 30px;
+				height: 30px;
+				background: url('//cdn.kaplaninternational.com/profiles/base_drupal_build/themes/kis_theme/images/select-arrow.png');
+				position: relative;
+				display: inline-block;
+			}
+section.block-webform .webform-client-form .webform-submit {
+				width: 100%;
+				float: right;
+				font-size: 14px;
+				background-color: #240F6E;
+				border: none;
+				margin: 1em 0;
+			}
+section.block-webform .webform-client-form .webform-submit:hover {
+					border: none;
+					background-color: #FFC82E;
+					color: #240F6E;
+				}
+@media (max-width: 991px) {
+				section.block-webform .webform-client-form fieldset {
+					margin-bottom: 25px;
+				}
+		}
+@media (max-width: 767px) {
+section.block-webform .webform-client-form {
+				margin: 20px 0
+		}
+		}
+@media (min-width: 768px) {
+		}
+@media (min-width: 992px) {
+				 	section.block-webform .webform-client-form > div > .webform-component-checkboxes {
+						/* input[type="checkbox"] {
+							position: absolute;
+							right: 0;
+						} */
+					}
+						/* text-align: right; */
+						section.block-webform .webform-client-form > div > .webform-component-checkboxes label.option {
+							padding-right: 30px;
+						}
+						section.block-webform .webform-client-form > div > .webform-component-checkboxes input[type="checkbox"] {
+							right: auto;
+							left: 0;
+						}
+
+				section.block-webform .webform-client-form .webform-submit {
+					font-size: 16px;
+					max-width: 380px;
+				}
+		}
+@media (min-width: 1200px) {
+		}
+/* - - - - - - - - - - - - - - - - -
+ - - - - - - - - - - - - - - - - -
+  - - - - - - - - - - - - - - - - -
+   - - - - - - - - - - - - - - - - -
+	- - - - - - - - - - - - - - - - -
+	 - - - - - - - - - - - - - - - - -
+	  - - - - - - - - - - - - - - - - -
+	   - - - - - - - - - - - - - - - - -
+		- - - - - - - - - - - - - - - - - */
+.language-dir-rtl section.block-webform .webform-client-form fieldset .webform-datepicker .form-type-select select,
+					.language-dir-rtl section.block-webform .webform-client-form fieldset .webform-component select {
+						background-position: 9px center;
+						padding-right: 12px;
+						padding-left: 33px
+					}
+.language-dir-rtl section.block-webform .webform-client-form fieldset .webform-datepicker .form-type-select::before,
+					.language-dir-rtl section.block-webform .webform-client-form fieldset .webform-component-select::before {
+						right: auto;
+						left: 29px
+					}
+.language-dir-rtl section.block-webform .webform-client-form fieldset .webform-datepicker .form-type-select {
+						float: right
+					}
+.language-dir-rtl section.block-webform .webform-client-form fieldset .webform-datepicker .form-type-select::before {
+						right: auto;
+						left: 31px
+					}
+.language-dir-rtl section.block-webform .webform-client-form fieldset .webform-datepicker .webform-calendar-icon {
+						float: right
+					}
+.language-dir-rtl section.block-webform .webform-client-form fieldset .webform-component {
+						float: right
+					}
+@media (max-width: 767px) {
+						.language-dir-rtl section.block-webform .webform-client-form fieldset .webform-datepicker .form-type-select .form-select {
+							padding-right: 7px;
+							padding-left: 16px;
+							background-position: 4px center
+						}
+		}
+@media (min-width: 1200px) {
+						.language-dir-rtl section.block-webform .webform-client-form fieldset .webform-datepicker .form-type-select .form-select {
+							padding-left: 30px;
+							padding-right: 8px
+						}
+						.language-dir-rtl section.block-webform .webform-client-form fieldset .left-component {
+							margin-right: 0;
+							margin-left: 6%
+						}
+		}
+@media (min-width: 992px) and (max-width: 1199px) {
+						.language-dir-rtl section.block-webform .webform-client-form fieldset .left-component {
+							margin-right: 0;
+							margin-left: 2%
+						}
+		}
+@media (min-width: 992px) {
+						.language-dir-rtl section.block-webform .webform-client-form fieldset .webform-client-form > div >.webform-component-checkboxes {
+							text-align: left
+						}
+						.language-dir-rtl section.block-webform .webform-client-form fieldset .webform-client-form > div >.webform-component-checkboxes label.option {
+							padding-right: 0;
+							padding-left: 30px
+						}
+		}
+.language-dir-rtl section.block-webform .webform-client-form .webform-submit {
+					float: left
+				}
+div {
+	
+}
 
 
  

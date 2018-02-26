@@ -15,9 +15,28 @@
 				.item-box {
 					text-align: center;
 
+					.icon-image {
+						margin: 0 auto;
+						width: 60px;
+
+						@mixin md-min {
+							width: 72px;
+						}
+					}
+
 					.desc {
-						padding: 10px 15px;
-						font-size: 15px;
+						padding: 4px 4px 24px;
+						font-size: $font-size-sm;
+						line-height: $line-height-narrow;
+
+						@mixin sm-min {
+							padding: 10px 15px;
+							font-size: $font-size-md;
+						}
+						@mixin md-min {
+							font-size: $font-size-ml;
+						}
+						
 					}
 				}
 

@@ -5,6 +5,7 @@
 			.hero-item-container {
 				position: relative;
 				z-index: 1;
+				overflow: hidden;
 
 				.hero-image {
 					background-color: #000;
@@ -20,118 +21,191 @@
 						height: 100%;
 					}
 
-					.item-bg { background-image: url('../../assets/images/summer-2018-xl.jpg'); }
-					@mixin sm-min {
-						.item-bg { background-image: url('../../assets/images/summer-2018-xl.jpg'); }
+					.item-bg { 
+						background-image: url('//assetlibs.kaplaninternational.com/_assets/summer2018/images/summer2018-hero-xs.jpg');
+						@mixin sm-min {
+							background-image: url('//assetlibs.kaplaninternational.com/_assets/summer2018/images/summer2018-hero-sm.jpg');
+						}
+						@mixin md-min {
+							background-image: url('//assetlibs.kaplaninternational.com/_assets/summer2018/images/summer2018-hero-md.jpg');
+						}
+						@mixin lg-min {
+							background-image: url('//assetlibs.kaplaninternational.com/_assets/summer2018/images/summer2018-hero-lg.jpg');
+						}
+						@mixin atRetina {
+							background-image: url('//assetlibs.kaplaninternational.com/_assets/summer2018/images/summer2018-hero@2x.jpg');
+						}
 					}
-					@mixin md-min {
-						.item-bg { background-image: url('../../assets/images/summer-2018-xl.jpg'); }
-					}
-					@mixin lg-min {
-						.item-bg { background-image: url('../../assets/images/summer-2018-xl.jpg'); }
-					}
-
 				}
 
 				.hero-text {
-					text-align: center;
 					color: $color-white;
-					/* background-color: rgba(0,0,0,0.1); */
 					background-size: 100% 100%;
+					background: -moz-linear-gradient(top,  rgba(193,138,36,0) 0%, rgba(193,138,36,0) 50%, rgba(193,138,36,0.75) 100%);
+					background: -webkit-linear-gradient(top,  rgba(193,138,36,0) 0%,rgba(193,138,36,0) 50%,rgba(193,138,36,0.75) 100%);
+					background: linear-gradient(to bottom,  rgba(193,138,36,0) 0%,rgba(193,138,36,0) 50%,rgba(193,138,36,0.75) 100%);
+					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00c18a24', endColorstr='#bfc18a24',GradientType=0 );
+
 
 					@mixin xs-max {
-						padding: 25% 0 25% 0;
-						background: rgba(0,0,0,0.25);
+						padding: 42% 0 2% 0;
+						background: rgba(0,0,0,0.1);
 					}
 					@mixin sm-min {
-						padding: 15% 0;
+						padding: 24% 0 0 0;
 					}
 					@mixin md-min {
-						padding: 10% 0;
+						padding: 18% 0 0 0;
 					}
 					@mixin lg-min {
-						padding: 8% 0;
+						padding: 16% 0 0 0;
 					}
 
-					h1.title {							
-						text-transform: uppercase;
-						font-weight: 800;
-						font-size: 30px;
-						@mixin sm-min {font-size: 46px;}
-						@mixin md-min {font-size: 48px;}
-						@mixin lg-min {font-size: 62px;}
-						@mixin xl-min {font-size: 68px;}
-					}
-					h3.strapline {
-						color: $color-white;
-						font-weight: $font-weight;
-						margin: 1em 0;
-						padding: 0;
-						font-size: 14px;
-						text-shadow: 1px 1px 16px rgba(0, 0, 0, 0.5);
-						@mixin sm-min { font-size: 18px; }
-						@mixin md-min { font-size: 20px; padding: 0 10%; }
-						@mixin lg-min { font-size: 24px; padding: 0 12%; }
-					}
+					.hero-inner {
+						position: relative;
 
-					.btn {
-						&.hero-btn {
-							position: relative;
-							z-index: 1;
-							font-size: 14px !important;
-							color: $color-white;
-							text-transform: uppercase;
-							font-weight: 600;
-							line-height: 1.1;
-							margin: 0.25em;
-							padding: 1.1em 1em;
-							width: 100%;
-							max-width: 290px;
-							overflow: hidden;
-							white-space: nowrap;
+						h1.campaign-title {
+							margin-bottom: 0;
 
-							&.primary {
-								background-color: $color-secondary-bluegreen;
-								border: 1px solid transparent;
-							}
-							&.secondary {
-								background-color: transparent;
-								border: 1px solid $color-white;
-							}
-
-							&.main-cta-ani {
-								background: linear-gradient(270deg, $color-secondary-bluegreen, $color-secondary-bluegreen, #00E4FF, $color-secondary-bluegreen, $color-secondary-bluegreen);
-								background-size: 1000% 1000%;
-								-webkit-animation: Gradation-Ani 6s ease infinite;
-								-moz-animation: Gradation-Ani 6s ease infinite;
-								animation: Gradation-Ani 6s ease infinite;
-							}
-
-							&:before {
-								content: '';
-								position: absolute;
-								z-index: -1;
-								top: 0;
-								left: 0;
-								width: 0;
-								height: 100%;
-								background-color: #240F6E;
-								transition: width .3s;
-							}
 							@mixin sm-min {
-								width: auto;
-								min-width: 250px;
+								width: calc(100% - 100px);
 							}
 							@mixin md-min {
-								font-size: 16px !important;
+								width: calc(100% - 120px);
+							}
 
-								&:hover {
-									border-color: #240F6E;
 
-									&:before {
-										width: 100%;
+							.title-inner {
+								display: inline-block;
+								line-height: $line-height-nospace;
+								color: $color-grey-c;
+								text-transform: uppercase;
+								font-weight: $font-weight-black;
+								text-shadow: 0px -2px 16px rgba(193, 138, 36, 0.95);
+
+								span {
+									display: block;
+								}
+
+								.title {
+									font-size: 42px;
+									letter-spacing: -0.02em;
+									padding-bottom: 0.1em;
+
+									@mixin sm-min {
+										font-size: 60px;
+										letter-spacing: -0.02em;
+										/* border-bottom: 10px solid $color-grey-c; */
+									}
+									@mixin md-min {
+										font-size: 86px;
+										letter-spacing: -0.03em;
+										/* border-bottom: 15px solid $color-grey-c; */
+									}
+									@mixin lg-min {
+										font-size: 102px;
+										letter-spacing: -0.04em;
+									}
+								}
+
+								.strapline {
+									padding: 0;
+									font-size: 16px;
+									line-height: $line-height-narrow;
+									@mixin sm-min {
+										font-size: 18px;
+									}
+									@mixin md-min {
+										font-size: 24px;
+									}
+									@mixin lg-min {
+										font-size: 28px;
+									}
+								}
+							}
+						}
+
+						.hero-cta {
+
+							@mixin sm-min {
+								position: absolute;
+								bottom: 0;
+								right: 0;
+								float: none;
+							}
+
+							.btn {
+								&.hero-btn {
+									position: relative;
+									z-index: 1;
+									font-size: 13px !important;
+									color: $color-white;
+									text-transform: uppercase;
+									font-weight: $font-weight-bold;
+									line-height: 1.1;
+									padding: 1.25em;
+									margin: 1em 0;
+									max-width: 250px;
+									overflow: hidden;
+									align-items: center;
+									box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.75);
+
+									&.primary {
+										background-color: $color-secondary-bluegreen;
+										border: none;
 									}
 
+									&.main-cta-ani {
+										background: linear-gradient(270deg, $color-secondary-bluegreen, $color-secondary-bluegreen, #00E4FF, $color-secondary-bluegreen, $color-secondary-bluegreen);
+										background-size: 1000% 1000%;
+										-webkit-animation: Gradation-Ani 6s ease infinite;
+										-moz-animation: Gradation-Ani 6s ease infinite;
+										animation: Gradation-Ani 6s ease infinite;
+									}
+
+									&:before {
+										content: '';
+										position: absolute;
+										z-index: -1;
+										top: 0;
+										left: 0;
+										width: 0;
+										height: 100%;
+										background-color: $color-primary;
+										transition: width .3s;
+									}
+
+									&:hover {
+										border-color: $color-primary;
+										
+
+										&:before {
+											width: 100%;
+										}
+
+									}
+
+									span {
+										flex: 0 0 100%;
+										max-width: 100%;
+									}
+
+									@mixin sm-min {
+										width: 120px;
+										height: 120px;
+										border-radius: 50%;
+									}
+									@mixin md-min {
+										width: 150px;
+										height: 150px;
+										font-size: 16px !important;
+									}
+									@mixin lg-min {
+
+									}
+									@mixin xl-min {
+
+									}
 								}
 							}
 						}
@@ -141,6 +215,7 @@
 		}
 	}
 }
+
 /* Gradient Animation */
 @-webkit-keyframes Gradation-Ani {
 	0% { background-position: 100% 50%; }

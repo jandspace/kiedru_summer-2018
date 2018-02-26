@@ -1,0 +1,433 @@
+section {
+	&.block-webform {
+		padding: 30px 0;
+		background-image: url('//assetlibs.kaplaninternational.com/_assets/summer2018/images/summer2018-form-xs.jpg');
+		background-position: center;
+		background-size: cover;
+
+		@mixin sm-min {
+			padding: 4% 0;
+			background-attachment: fixed;
+			background-image: url('//assetlibs.kaplaninternational.com/_assets/summer2018/images/summer2018-form-xs.jpg');
+		}
+		@mixin md-min {
+			background-image: url('//assetlibs.kaplaninternational.com/_assets/summer2018/images/summer2018-form-md.jpg');
+		}
+		@mixin lg-min {
+			background-image: url('//assetlibs.kaplaninternational.com/_assets/summer2018/images/summer2018-form-md.jpg');
+		}
+
+		.block-title,
+		.block-content {
+			margin-left: 20px;
+			margin-right: 20px;
+			@mixin sm-min {
+				max-width: 640px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			@mixin md-min {
+				max-width: 720px;
+			}
+			@mixin lg-min {
+				max-width: 800px;
+			}
+		}
+
+		.block-title {
+			margin-bottom: 1em;
+			color: #202020;
+			text-transform: uppercase;
+			text-align: center;
+			font-size: 24px;
+
+			@mixin sm-min {
+				font-size: 26px;
+			}
+			@mixin md-min {
+				font-size: 28px;
+			}
+			@mixin lg-min {
+				font-size: 32px;
+			}
+		}
+
+		.webform-client-form {
+			> div {
+				> .webform-component-checkboxes {
+					width: 100%;
+					margin-bottom: 0;
+					color: #404040;
+					input[type="checkbox"] {
+						width: 17px;
+						height: 17px;
+						top: -2px;
+					}
+				}
+			}
+
+			> div:before,
+			> div:after {
+				content: " ";
+				display: table
+			}
+			> div:after {
+				clear: both
+			}
+
+			fieldset {
+				border: none;
+				box-shadow: rgba(0, 0, 0, 0.247059) 0 5px 18px 0;
+				margin-bottom: 35px;
+
+				&.panel-default {
+					> .panel-heading {
+						background: #232977;
+						font-weight: 700;
+						font-size: 16px;
+						letter-spacing: .01em;
+						color: #FFFFFF;
+						
+						.panel-title {
+							font-size: 15px;
+							@mixin sm-min {
+								font-size: 16px;
+							}
+						}
+					}
+				}
+				&.panel {
+					background-color: rgba(255,255,255,0.9);
+
+					.webform-component {
+						margin-bottom: 1.25em;
+
+						label {
+							font-weight: $font-weight;
+							color: $color-grey-l;
+						}
+						input, button, select, textarea {
+							font-size: $font-size-md;
+							height: auto;
+							min-height: 38px;
+							line-height: normal;
+						}
+						textarea.form-control {
+							line-height: 1.5;
+						}
+					}
+
+					.panel-body {
+						@mixin sm-min {
+							padding: 2em;
+						}
+					}
+				}
+
+				label {
+					display: block;
+					float: none;
+					width: 100%;
+					font-weight: 700;
+					min-height: 0;
+				}
+				.webform-component {
+					display: block;
+					float: left;
+					width: 100%;
+					margin-bottom: 33px;
+					&:last-child {
+						margin-bottom: 0;
+					}
+
+					.description {
+						width: 100%;
+						float: none;
+						font-size: 12px;
+					}
+				}
+				.webform-component>.webform-datepicker,
+				.webform-component>select,
+				.webform-component>.form-textarea-wrapper,
+				.webform-component>input {
+					width: 100%;
+					float: none;
+					clear: both;
+				}
+				.webform-datepicker:before,
+				.webform-datepicker:after {
+					content: " ";
+					display: table;
+				}
+				.webform-datepicker:after {
+					clear: both;
+				}
+				.webform-datepicker:before,
+				.webform-datepicker:after {
+					content: " ";
+					display: table;
+				}
+				.webform-datepicker:after {
+					clear: both;
+				}
+				.webform-datepicker .form-type-select,
+				.webform-component {
+					position: relative;
+					display: inline-block;
+				}
+				.webform-datepicker .form-type-select select,
+				.webform-component select {
+					padding-right: 33px;
+					background: #fff url('//cdn.kaplaninternational.com/profiles/base_drupal_build/themes/kis_theme/images/select-arrow.png') right 6px center no-repeat;
+				}
+				.webform-component-date .form-group {
+					margin-bottom: 0;
+				}
+				.webform-datepicker .form-type-select::before,
+				.webform-component-select::before {
+					display: none;
+					position: absolute;
+					bottom: 7px;
+					height: 20px;
+					right: 29px;
+					width: 1px;
+					content: " ";
+					background: #ddd;
+				}
+				.webform-datepicker .form-type-select {
+					float: left;
+				}
+				.webform-datepicker .form-type-select::before {
+					right: 31px;
+				}
+				.webform-datepicker .webform-calendar-icon {
+					vertical-align: top;
+					float: left;
+				}
+				.webform-component--step-1--Questions-and-Comments--c-sfd-1454655804 .radio {
+					display: inline-block
+				}
+				.webform-component--step-2--Date-of-Birth--c-sfd-1463042328 .webform-container-inline {
+					width: 100%
+				}
+				div[class*='webform-component--step-1--Questions-and-Comments'] {
+					width: 100%
+				}
+				&.webform-component-fieldset {
+					div[class*='fieldset--Questions-and-Comments'],
+					div[class*='fieldset--Brochure-Downloaded'] {
+						width: 100%;
+					}
+					@mixin md-max {
+						div[class*='webform-component--fieldset--Preferred-Start-Date'] {
+							width: 100%
+						}
+					}
+					@mixin lg-min {
+						.webform-component.webform-component--fieldset--Brochure-Downloaded--c-sfd-1407249818,
+						.webform-component.webform-component--fieldset--Brochure-Downloaded--c-sfd-1407249854 {
+							width: 47%
+						}
+					}
+					@mixin md-only {
+						.webform-component.webform-component--fieldset--Brochure-Downloaded--c-sfd-1407249818,
+						.webform-component.webform-component--fieldset--Brochure-Downloaded--c-sfd-1407249854 {
+							width: 49%
+						}
+					}
+				}
+
+
+				@mixin md-max {
+					fieldset div[class*='webform-component--step-1--Preferred-Start-Date'],
+					fieldset div[class*='webform-component--step-1--Preferred-Contact-Date'] {
+						width: 100%;
+					}
+				}
+				@mixin xs-max {
+					.webform-datepicker .form-type-select .form-select {
+						padding-right: 16px;
+						padding-left: 7px;
+						background-position: right 1px center;
+					}
+				}
+				@mixin sm-min {
+					.webform-datepicker .form-type-select::before,
+					.webform-component-select::before {
+						display: block;
+					}
+				}
+				@mixin md-only {
+					.left-component {
+						margin-right: 2%
+					}
+				}
+				@mixin lg-min {
+					.webform-component {
+						width: 47%;
+					}
+					.webform-datepicker .form-type-select .form-select {
+						padding-right: 30px;
+						padding-left: 8px;
+					}
+					.left-component {
+						margin-right: 6%;
+					}
+				}
+			}
+			.icon-ki-calendar:before {
+				content: " ";
+				left: 0;
+				top: 2px;
+				width: 30px;
+				height: 30px;
+				background: url('//cdn.kaplaninternational.com/profiles/base_drupal_build/themes/kis_theme/images/select-arrow.png');
+				position: relative;
+				display: inline-block;
+			}
+
+			.webform-submit {
+				width: 100%;
+				float: right;
+				font-size: 14px;
+				background-color: $color-primary;
+				border: none;
+				margin: 1em 0;
+				&:hover {
+					border: none;
+					background-color: $color-accent-yellow;
+					color: $color-primary;
+				}
+			}
+
+			@mixin sm-max {
+				fieldset {
+					margin-bottom: 25px;
+				}
+			}
+			@mixin xs-max {
+				margin: 20px 0;
+			}
+			@mixin sm-min {
+
+			}
+			@mixin md-min {
+				> div {
+				 	> .webform-component-checkboxes {
+						/* text-align: right; */
+						label.option {
+							padding-right: 30px;
+						}
+						input[type="checkbox"] {
+							right: auto;
+							left: 0;
+						}
+						/* input[type="checkbox"] {
+							position: absolute;
+							right: 0;
+						} */
+					}
+				}
+
+				.webform-submit {
+					font-size: 16px;
+					max-width: 380px;
+				}
+			}
+			@mixin lg-min {
+				
+			}
+		}
+	}
+}
+
+
+
+
+/* - - - - - - - - - - - - - - - - -
+ - - - - - - - - - - - - - - - - -
+  - - - - - - - - - - - - - - - - -
+   - - - - - - - - - - - - - - - - -
+	- - - - - - - - - - - - - - - - -
+	 - - - - - - - - - - - - - - - - -
+	  - - - - - - - - - - - - - - - - -
+	   - - - - - - - - - - - - - - - - -
+		- - - - - - - - - - - - - - - - - */
+
+
+
+
+.language-dir-rtl {
+	section {
+		&.block-webform {
+			.webform-client-form {
+				fieldset {
+					.webform-datepicker .form-type-select select,
+					.webform-component select {
+						background-position: 9px center;
+						padding-right: 12px;
+						padding-left: 33px
+					}
+					.webform-datepicker .form-type-select::before,
+					.webform-component-select::before {
+						right: auto;
+						left: 29px
+					}
+					.webform-datepicker .form-type-select {
+						float: right
+					}
+					.webform-datepicker .form-type-select::before {
+						right: auto;
+						left: 31px
+					}
+					.webform-datepicker .webform-calendar-icon {
+						float: right
+					}
+					.webform-component {
+						float: right
+					}
+
+					@mixin xs-max {
+						.webform-datepicker .form-type-select .form-select {
+							padding-right: 7px;
+							padding-left: 16px;
+							background-position: 4px center
+						}
+					}
+					@mixin lg-min {
+						.webform-datepicker .form-type-select .form-select {
+							padding-left: 30px;
+							padding-right: 8px
+						}
+						.left-component {
+							margin-right: 0;
+							margin-left: 6%
+						}
+					}
+					@mixin md-only {
+						.left-component {
+							margin-right: 0;
+							margin-left: 2%
+						}
+					}
+
+					@mixin md-min {
+						.webform-client-form > div >.webform-component-checkboxes {
+							text-align: left
+						}
+						.webform-client-form > div >.webform-component-checkboxes label.option {
+							padding-right: 0;
+							padding-left: 30px
+						}
+					}
+				}
+
+				.webform-submit {
+					float: left
+				}
+			}
+		}
+	}
+}
+
+
