@@ -20,12 +20,11 @@ gulp.task('localize', function () {
 gulp.task('localizeDrupal', function () {
     return gulp.src('dist/master/index.html')
         .pipe(i18n({
-            locales: ['ar', 'br', 'cz', 'en'],
+            locales: ['en'],
             localeDir: 'gulp/locales'
         }))
         .pipe(gulp.dest('dist/translation'));
 });
-
 
 
 gulp.task('copyMaster', function() {
@@ -34,6 +33,7 @@ gulp.task('copyMaster', function() {
         .pipe(gulp.dest('elandww/master/'));
 
 });
+
 
 gulp.task('copyMasterDrupal', function() {
     return gulp.src('dist/index.html')
