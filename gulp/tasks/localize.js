@@ -20,7 +20,7 @@ gulp.task('localize', function () {
 gulp.task('localizeDrupal', function () {
     return gulp.src('dist/master/index.html')
         .pipe(i18n({
-            locales: ['en'],
+            locales: ['en', 'ar'],
             localeDir: 'gulp/locales'
         }))
         .pipe(gulp.dest('dist/translation'));

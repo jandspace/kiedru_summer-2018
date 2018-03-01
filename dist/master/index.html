@@ -15,7 +15,7 @@
 <html class="ie9 ie6-9">
 <![endif]-->
 <!--[if (gte IE 10)|(gt IEMobile 7)]><!-->
-<html xmlns:ng="http://angularjs.org" class="not-ie6-9" lang="en" 
+<html xmlns:ng="http://angularjs.org" class="not-ie6-9" lang="${{ page.lang }}$" 
 	xmlns:fb="http://ogp.me/ns/fb#"
 	xmlns:og="http://ogp.me/ns#"
 	xmlns:article="http://ogp.me/ns/article#"
@@ -115,8 +115,6 @@
 		</script>
 		<![endif]-->
 		<link rel="apple-touch-icon" href="/profiles/base_drupal_build/themes/kis_theme/images/apple-touch-icon.png">
-
-		<link rel="stylesheet" href="temp/styles/styles.css">
 	</head>
 	<body dir="ltr" class="html not-front not-logged-in no-sidebars page-node page-node- page-node-2633 node-type-hub environment-prod i18n-en language-en language-dir-ltr sticky-toolbar sticky-nav no-course-finder"  ng-app="kaplan" id="ng-app">
 		<div class="wrapper" id="wrapper">
@@ -575,6 +573,7 @@
 
 
 <!-- SECTION : HERO ::: START > - > - > - > - > - > - > - > - > - > - > - > - > - > - > - > - > -->
+<link rel="stylesheet" href="${{ page.css-link }}$">
 <div class="section-content fullwidth section--hero">
 	<div class="section-inner hero" id="Hero">
 		<div class="item hero-item-container">
@@ -587,14 +586,14 @@
 				<div class="container">
 					<div class="hero-inner">
 						<h1 class="campaign-title">
-							<div class="title-inner">
+							<span class="title-inner">
 								<span class="strapline">
 									${{ page.hero.strapline }}$
 								</span>
 								<span class="title">
 									${{ page.hero.title }}$
 								</span>
-							</div>
+							</span>
 						</h1>
 						<div class="hero-cta">
 							<a class="btn hero-btn primary flex-container main-cta-ani scroll" href="${{ page.hero.cta-url }}$">
@@ -647,7 +646,7 @@
 					<div class="item-box">
 						<div class="image-container">
 							<h3 class="title">
-								<a href="#" class="overlay flex-container">
+								<a href="${{ page.hero.cta-url }}$" class="overlay flex-container scroll">
 									<span class="overlay--inner">
 										<span class="course-title">${{ page.package.body.package-1.course }}$</span>
 										<span class="location">${{ page.package.body.package-1.location }}$</span>
@@ -676,7 +675,7 @@
 							</div>
 						</div>
 						<div class="cta-container">
-							<a class="btn btn-slide scroll" href="#block-webform-client-block-501">
+							<a class="btn btn-slide scroll" href="${{ page.hero.cta-url }}$">
 								<span class="block btn-label">${{ page.package.body.package-1.cta-label }}$</span>
 								<span class="block btn-sub">${{ page.package.body.package-1.cta-label-small }}$</span>
 							</a>
@@ -687,7 +686,7 @@
 					<div class="item-box">
 						<div class="image-container">
 							<h3 class="title">
-								<a href="#" class="overlay flex-container">
+								<a href="${{ page.hero.cta-url }}$" class="overlay flex-container scroll">
 									<span class="overlay--inner">
 										<span class="course-title">${{ page.package.body.package-2.course }}$</span>
 										<span class="location">${{ page.package.body.package-2.location }}$</span>
@@ -716,7 +715,7 @@
 							</div>
 						</div>
 						<div class="cta-container">
-							<a class="btn btn-slide scroll" href="#block-webform-client-block-501">
+							<a class="btn btn-slide scroll" href="${{ page.hero.cta-url }}$">
 								<span class="block btn-label">${{ page.package.body.package-2.cta-label }}$</span>
 								<span class="block btn-sub">${{ page.package.body.package-2.cta-label-small }}$</span>
 							</a>
@@ -727,7 +726,7 @@
 					<div class="item-box">
 						<div class="image-container">
 							<h3 class="title">
-								<a href="#" class="overlay flex-container">
+								<a href="${{ page.hero.cta-url }}$" class="overlay flex-container scroll">
 									<span class="overlay--inner">
 										<span class="course-title">${{ page.package.body.package-3.course }}$</span>
 										<span class="location">${{ page.package.body.package-3.location }}$</span>
@@ -756,7 +755,7 @@
 							</div>
 						</div>
 						<div class="cta-container">
-							<a class="btn btn-slide scroll" href="#block-webform-client-block-501">
+							<a class="btn btn-slide scroll" href="${{ page.hero.cta-url }}$">
 								<span class="block btn-label">${{ page.package.body.package-3.cta-label }}$</span>
 								<span class="block btn-sub">${{ page.package.body.package-3.cta-label-small }}$</span>
 							</a>
@@ -815,7 +814,7 @@
 								${{ page.process.body.destination.strapline }}$
 							</div>
 							<p class="desc">
-								${{ page.process.body.destination.accommodation }}$
+								${{ page.process.body.destination.desc }}$
 							</p>
 						</div>
 					</div>
@@ -833,7 +832,7 @@
 								${{ page.process.body.course.strapline }}$
 							</div>
 							<p class="desc">
-								${{ page.process.body.course.accommodation }}$
+								${{ page.process.body.course.desc }}$
 							</p>
 						</div>
 					</div>
@@ -851,14 +850,14 @@
 								${{ page.process.body.accommodation.strapline }}$
 							</div>
 							<p class="desc">
-								${{ page.process.body.accommodation.accommodation }}$
+								${{ page.process.body.accommodation.desc }}$
 							</p>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="cta-container">
-				<a class="btn btn-slide scroll" href="#">
+				<a class="btn btn-slide scroll" href="${{ page.hero.cta-url }}$">
 					<span class="block btn-label">${{ page.process.body.cta-label }}$</span>
 					<span class="block btn-sub">${{ page.process.body.cta-label-small }}$</span>
 				</a>
@@ -930,7 +929,7 @@
 								<div class="flex-item course-item">
 									<div class="item-box">
 										<h4 class="title">
-											<a href="#">${{ page.other-product.body.k-course.course1-title }}$</a>
+											<a href="${{ page.other-product.body.k-course.course1-link }}$">${{ page.other-product.body.k-course.course1-title }}$</a>
 										</h4>
 										<ul class="bullet-points">
 											<li>${{ page.other-product.body.k-course.course1-why }}$</li>
@@ -945,7 +944,7 @@
 								<div class="flex-item course-item">
 									<div class="item-box">
 										<h4 class="title">
-											<a href="#">${{ page.other-product.body.k-course.course2-title }}$</a>
+											<a href="${{ page.other-product.body.k-course.course2-link }}$">${{ page.other-product.body.k-course.course2-title }}$</a>
 										</h4>
 										<ul class="bullet-points">
 											<li>${{ page.other-product.body.k-course.course2-why }}$</li>
@@ -960,7 +959,7 @@
 								<div class="flex-item course-item">
 									<div class="item-box">
 										<h4 class="title">
-											<a href="#">${{ page.other-product.body.k-course.course3-title }}$</a>
+											<a href="${{ page.other-product.body.k-course.course3-link }}$">${{ page.other-product.body.k-course.course3-title }}$</a>
 										</h4>
 										<ul class="bullet-points">
 											<li>${{ page.other-product.body.k-course.course3-why }}$</li>
@@ -1081,7 +1080,7 @@
 
 
 
-<!-- SECTION : OTHER PRODUCT ::: START > - > - > - > - > - > - > - > - > - > - > - > - > - > - > - > - > - > -->
+<!-- SECTION : KAPLAN DIFFERENCE ::: START > - > - > - > - > - > - > - > - > - > - > - > - > - > - > - > - > - > -->
 <div class="section-content fullwidth section--difference bg-fill" id="Difference">
 	<div class="section-inner container difference">
 		<div class="section-head">
@@ -1122,7 +1121,7 @@
 		</div>
 	</div>
 </div>
-<!-- SECTION : OTHER PRODUCT ::: END > - > - > - > - > - > - > - > - > - > - > - > - > - > - > - > - > - > -->
+<!-- SECTION : KAPLAN DIFFERENCE ::: END > - > - > - > - > - > - > - > - > - > - > - > - > - > - > - > - > - > -->
 
 
 

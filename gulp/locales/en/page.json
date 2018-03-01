@@ -1,15 +1,14 @@
-// TRANSLATE JSON
-
 {
-	// SECTION: HERO
+	"lang": "en",
+	"css-link": "//assetlibs.kaplaninternational.com/kidrupal/www/en/summer-2018/v3/assets/styles/styles.css",
+
 	"hero": {
-		"strapline": "This is Strapline",
-		"title": "This is Title",
-		"cta": "Button",
-		"cta-url": "#block-webform-client-block-501"
+		"strapline": "Time to travel. Time to learn. Time to live",
+		"title": "Now’s the Time",
+		"cta": "Contact an advisor",
+		"cta-url": "#block-webform-client-block-2844"
 	},
 
-	// SECTION: CHOOSE YOUR VACATION ADVENTURE
 	"package": {
 		"head": {
 			"title": "Choose your vacation adventure",
@@ -18,8 +17,8 @@
 		},
 		"body": {
 			"package-1": {
-				"course": "English Course Title 1", //Course Title
-				"location": "English Destination 1", //Location Title
+				"course": "General English",
+				"location": "London Covent Garden",
 				"list-1": "4 Weeks (Flexible from 2 weeks)",
 				"list-2": "Student Residence or Homestay included",
 				"list-3": "Various social activities available",
@@ -31,8 +30,8 @@
 				"cta-label-small": "For more information"
 			},
 			"package-2": {
-				"course": "English Course Title 2", //Course Title
-				"location": "English Destination 3", //Location Title
+				"course": "Intensive English",
+				"location": "New York Empire State",
 				"list-1": "4 Weeks (Flexible from 2 weeks)",
 				"list-2": "Student Residence or Homestay included",
 				"list-3": "Various social activities available",
@@ -44,8 +43,8 @@
 				"cta-label-small": "For more information"
 			},
 			"package-3": {
-				"course": "English Course Title 3", //Course Title
-				"location": "English Destination 3", //Location Title
+				"course": "Vacation English",
+				"location": "Sydeny City",
 				"list-1": "4 Weeks (Flexible from 2 weeks)",
 				"list-2": "Student Residence or Homestay included",
 				"list-3": "Various social activities available",
@@ -59,7 +58,6 @@
 		}
 	},
 
-	// SECTION: CREATE YOUR OWN PACKAGE
 	"process": {
 		"head": {
 			"title": "Create your own package",
@@ -74,19 +72,18 @@
 			"course": {
 				"title": "Your English Course",
 				"strapline": "How do you really want to study?",
-				"desc": "For more information"
+				"desc": "Whether you want to boost your skills dramatically in a short space of time, pass a specific exam, or simply pick up the basics whilst having some fun, Kaplan can cater to your individual needs."
 			},
 			"accommodation": {
-				"title": "For more information",
-				"strapline": "For more information",
-				"desc": "Whether you want to boost your skills dramatically in a short space of time, pass a specific exam, or simply pick up the basics whilst having some fun, Kaplan can cater to your individual needs."
+				"title": "Your Accommodation",
+				"strapline": "What feels like home for you?",
+				"desc": "Feeling at home is crucial to your learning experience. Whether you prefer to live with other students or with a native family, all of our student homes are safe, social, well-maintained and located close to both schools and city centres."
 			},
 			"cta-label": "Send your enquiry",
 			"cta-label-small": "To create your own package"
 		}
 	},
 
-	// SECTION: MORE ABOUT OUR COURSES AND DESTINATIONS
 	"other-product": {
 		"head": {
 			"title": "More about our Courses and Destinations",
@@ -149,7 +146,7 @@
 
 	"difference": {
 		"head": {
-			"title": "The Kaplan Difference",
+			"title": "The Kaplan Difference"
 		},
 		"body": {
 			"difference-1": "80 years of excellence in education",
