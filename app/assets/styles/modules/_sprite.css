@@ -2,11 +2,11 @@
 Instead edit gulp/templates/sprite */
 
 .sprite-icon {
-  background-image: url('//assetlibs.kaplaninternational.com/_assets/summer2018/images/sprites/sprite-17b20a1c.svg')/*rtl:ignore*/;
+  background-image: url('//assetlibs.kaplaninternational.com/_assets/summer2018/images/sprites/sprite-516e1b50.svg')/*rtl:ignore*/;
 }
 
 .no-svg .sprite-icon {
-  background-image: url('//assetlibs.kaplaninternational.com/_assets/summer2018/images/sprites/sprite-17b20a1c.png')/*rtl:ignore*/;
+  background-image: url('//assetlibs.kaplaninternational.com/_assets/summer2018/images/sprites/sprite-516e1b50.png')/*rtl:ignore*/;
 
 }
 
@@ -20,11 +20,23 @@ Instead edit gulp/templates/sprite */
 .icon--kaplan-course {
   width: 102px;
   height: 102px;
-  background-position: 100% 0/*rtl:ignore*/;
+  background-position: 50% 0/*rtl:ignore*/;
 }
 
 .icon--kaplan-destination {
   width: 102px;
   height: 102px;
   background-position: 0 100%/*rtl:ignore*/;
+}
+
+.icon--kaplan-personalisation {
+  width: 102px;
+  height: 102px;
+  background-position: 50% 100%/*rtl:ignore*/;
+}
+
+.icon--kaplan-school {
+  width: 102px;
+  height: 102px;
+  background-position: 100% 0/*rtl:ignore*/;
 }

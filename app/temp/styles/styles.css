@@ -16,25 +16,25 @@
 /* XL - Extra Large Devices - - - - - - - - - - - - - - - */
 /* Retina - - - - - - - - - - - - - - - */
 .wrapper {
-  max-width: 1170px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
+	max-width: 1170px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 .wrapper:before {
-  content: '';
-  display: table;
+	content: '';
+	display: table;
 }
 .wrapper:after {
-  content: '';
-  display: table;
-  clear: both;
+	content: '';
+	display: table;
+	clear: both;
 }
 @media (min-width: 992px) {
 .wrapper {
-    padding-left: 15px;
-    padding-right: 15px
+		padding-left: 15px;
+		padding-right: 15px
 }
 		}
 html, body {
@@ -63,9 +63,6 @@ a:hover {
 .content {
 	margin-top: 0;
 }
-/* ul li::before {
-	content: none !important;
-} */
 .node-hub .field-collection-container .field-collection-view {
 	padding: 0;
 }
@@ -373,10 +370,10 @@ body .node * {
 /* Do not edit modules/_sprite directly as it is generated automatically by Gulp.
 Instead edit gulp/templates/sprite */
 .sprite-icon {
-  background-image: url('//assetlibs.kaplaninternational.com/_assets/summer2018/images/sprites/sprite-17b20a1c.svg')/*rtl:ignore*/;
+  background-image: url('//assetlibs.kaplaninternational.com/_assets/summer2018/images/sprites/sprite-516e1b50.svg')/*rtl:ignore*/;
 }
 .no-svg .sprite-icon {
-  background-image: url('//assetlibs.kaplaninternational.com/_assets/summer2018/images/sprites/sprite-17b20a1c.png')/*rtl:ignore*/;
+  background-image: url('//assetlibs.kaplaninternational.com/_assets/summer2018/images/sprites/sprite-516e1b50.png')/*rtl:ignore*/;
 
 }
 .icon--kaplan-accommodation {
@@ -387,12 +384,22 @@ Instead edit gulp/templates/sprite */
 .icon--kaplan-course {
   width: 102px;
   height: 102px;
-  background-position: 100% 0/*rtl:ignore*/;
+  background-position: 50% 0/*rtl:ignore*/;
 }
 .icon--kaplan-destination {
   width: 102px;
   height: 102px;
   background-position: 0 100%/*rtl:ignore*/;
+}
+.icon--kaplan-personalisation {
+  width: 102px;
+  height: 102px;
+  background-position: 50% 100%/*rtl:ignore*/;
+}
+.icon--kaplan-school {
+  width: 102px;
+  height: 102px;
+  background-position: 100% 0/*rtl:ignore*/;
 }
 .field-item .section--hero {
 		padding: 0;
@@ -434,13 +441,12 @@ Instead edit gulp/templates/sprite */
 					}
 		}
 @media
-			only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 1300px),
-			only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 1300px),
-			only screen and (        min-device-pixel-ratio: 2)      and (min-width: 1300px),
-			only screen and (                -webkit-min-device-pixel-ratio: 2) and (min-width: 1300px),
-			only screen and (                min-resolution: 192dpi) and (min-width: 1300px),
-			only screen and (                -webkit-min-device-pixel-ratio: 2)  and (min-width: 1300px),
-			only screen and (                min-resolution: 2dppx)  and (min-width: 1300px) {
+			only screen and (-webkit-min-device-pixel-ratio: 2),
+			only screen and (   min--moz-device-pixel-ratio: 2),
+			only screen and (        min-device-pixel-ratio: 2),
+			only screen and (                -webkit-min-device-pixel-ratio: 2),
+			only screen and (                min-resolution: 192dpi),
+			only screen and (                min-resolution: 2dppx) {
 .field-item .section--hero .hero .hero-item-container .hero-image .item-bg {
 							background-image: url('//assetlibs.kaplaninternational.com/_assets/summer2018/images/summer2018-hero@2x.jpg')
 					}
@@ -509,14 +515,12 @@ Instead edit gulp/templates/sprite */
 .field-item .section--hero .hero .hero-item-container .hero-text .hero-inner h1.campaign-title .title-inner .title {
 										font-size: 60px;
 										letter-spacing: -0.02em
-										/* border-bottom: 10px solid $color-grey-c; */
 								}
 		}
 @media (min-width: 992px) {
 .field-item .section--hero .hero .hero-item-container .hero-text .hero-inner h1.campaign-title .title-inner .title {
 										font-size: 86px;
 										letter-spacing: -0.03em
-										/* border-bottom: 15px solid $color-grey-c; */
 								}
 		}
 @media (min-width: 1200px) {
@@ -652,9 +656,6 @@ Instead edit gulp/templates/sprite */
 				max-width: 100%;
 				padding: 0 15px 15px 15px;
 			}
-/* &:nth-of-type(1) { order: 2; }
-				&:nth-of-type(2) { order: 1; }
-				&:nth-of-type(3) { order: 3; } */
 @media (min-width: 768px) {
 .field-item .section--package .package .flex-item {
 					-webkit-box-flex: 0;
@@ -662,9 +663,6 @@ Instead edit gulp/templates/sprite */
 					        flex: 0 0 33.33333333%;
 					max-width: 33.33333333%;
 					padding: 0 8px 15px 8px
-					/* &:nth-of-type(1) { order: 1; }
-					&:nth-of-type(2) { order: 2; }
-					&:nth-of-type(3) { order: 3; } */
 			}
 		}
 @media (min-width: 992px) {
@@ -672,21 +670,6 @@ Instead edit gulp/templates/sprite */
 					padding: 0 15px 15px 15px
 			}
 		}
-/* &.feature {
-					flex: 0 0 100%;
-					max-width: 100%;
-					padding: 5px 15px;
-					@mixin sm-min {
-						flex: 0 0 33.33333333%;
-						max-width: 33.33333333%;
-						padding: 8px;
-					}
-					@mixin md-min {
-						flex: 0 0 36%;
-						max-width: 36%;
-						padding: 15px;
-					}
-				} */
 .field-item .section--package .package .flex-item .item-box {
 					background-color: #FFFFFF;
 					-webkit-box-shadow: 1px 1px 15px rgba(0,0,0,.1);
@@ -932,13 +915,12 @@ Instead edit gulp/templates/sprite */
 	}
 		}
 @media
-			only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 1300px),
-			only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 1300px),
-			only screen and (        min-device-pixel-ratio: 2)      and (min-width: 1300px),
-			only screen and (                -webkit-min-device-pixel-ratio: 2) and (min-width: 1300px),
-			only screen and (                min-resolution: 192dpi) and (min-width: 1300px),
-			only screen and (                -webkit-min-device-pixel-ratio: 2)  and (min-width: 1300px),
-			only screen and (                min-resolution: 2dppx)  and (min-width: 1300px) {
+			only screen and (-webkit-min-device-pixel-ratio: 2),
+			only screen and (   min--moz-device-pixel-ratio: 2),
+			only screen and (        min-device-pixel-ratio: 2),
+			only screen and (                -webkit-min-device-pixel-ratio: 2),
+			only screen and (                min-resolution: 192dpi),
+			only screen and (                min-resolution: 2dppx) {
 .field-item .section--process {
 			background-image: url('//assetlibs.kaplaninternational.com/_assets/summer2018/images/summer2018-process@2x.jpg')
 	}
@@ -1116,13 +1098,12 @@ Instead edit gulp/templates/sprite */
 	}
 		}
 @media
-			only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 1300px),
-			only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 1300px),
-			only screen and (        min-device-pixel-ratio: 2)      and (min-width: 1300px),
-			only screen and (                -webkit-min-device-pixel-ratio: 2) and (min-width: 1300px),
-			only screen and (                min-resolution: 192dpi) and (min-width: 1300px),
-			only screen and (                -webkit-min-device-pixel-ratio: 2)  and (min-width: 1300px),
-			only screen and (                min-resolution: 2dppx)  and (min-width: 1300px) {
+			only screen and (-webkit-min-device-pixel-ratio: 2),
+			only screen and (   min--moz-device-pixel-ratio: 2),
+			only screen and (        min-device-pixel-ratio: 2),
+			only screen and (                -webkit-min-device-pixel-ratio: 2),
+			only screen and (                min-resolution: 192dpi),
+			only screen and (                min-resolution: 2dppx) {
 .field-item .section--other-product {
 			background-image: url('//assetlibs.kaplaninternational.com/_assets/summer2018/images/summer2018-pattern@2x.jpg')
 	}
@@ -1356,23 +1337,6 @@ Instead edit gulp/templates/sprite */
 										font-size: 13px;
 										margin-bottom: 0.5em;
 									}
-/* .course-price {
-										ul {
-											padding: 6px 0 0 0;
-
-											li {
-												padding: 4px;
-												margin-bottom: 0;
-												border-top: 1px solid $color-grey-e;
-												&:before {
-													content: none;
-												}
-												.price {
-													font-weight: $font-weight-bold;
-												}
-											}
-										}
-									} */
 .field-item .section--other-product .other-product .course-school--container .panel .panel-collapse .panel-body .flex-item .item-box .link {
 										display: inline-block;
 										font-weight: 600;
@@ -1418,7 +1382,6 @@ Instead edit gulp/templates/sprite */
 				max-width: 50%;
 				padding-top: 0;
 				padding-bottom: 0;
-
 			}
 @media (min-width: 768px) {
 .field-item .section--difference .difference .flex-item {
@@ -1426,7 +1389,6 @@ Instead edit gulp/templates/sprite */
 					    -ms-flex: 0 0 25%;
 					        flex: 0 0 25%;
 					max-width: 25%
-
 			}
 		}
 .field-item .section--difference .difference .flex-item .item-box {
@@ -1445,19 +1407,16 @@ Instead edit gulp/templates/sprite */
 						padding: 4px 4px 24px;
 						font-size: 13px;
 						line-height: 1.28571428;
-						
 					}
 @media (min-width: 768px) {
 .field-item .section--difference .difference .flex-item .item-box .desc {
 							padding: 10px 15px;
 							font-size: 14px
-						
 					}
 		}
 @media (min-width: 992px) {
 .field-item .section--difference .difference .flex-item .item-box .desc {
 							font-size: 15px
-						
 					}
 		}
 section.block-webform {
@@ -1480,7 +1439,18 @@ section.block-webform {
 		}
 @media (min-width: 1200px) {
 section.block-webform {
-			background-image: url('//assetlibs.kaplaninternational.com/_assets/summer2018/images/summer2018-form-md.jpg')
+			background-image: url('//assetlibs.kaplaninternational.com/_assets/summer2018/images/summer2018-form-lg.jpg')
+	}
+		}
+@media
+			only screen and (-webkit-min-device-pixel-ratio: 2),
+			only screen and (   min--moz-device-pixel-ratio: 2),
+			only screen and (        min-device-pixel-ratio: 2),
+			only screen and (                -webkit-min-device-pixel-ratio: 2),
+			only screen and (                min-resolution: 192dpi),
+			only screen and (                min-resolution: 2dppx) {
+section.block-webform {
+			background-image: url('//assetlibs.kaplaninternational.com/_assets/summer2018/images/summer2018-form-lg@2x.jpg')
 	}
 		}
 section.block-webform .block-title,
@@ -1760,6 +1730,10 @@ section.block-webform .webform-client-form .webform-submit:hover {
 					border: none;
 					background-color: #FFC82E;
 					color: #240F6E;
+				}
+section.block-webform .webform-client-form .webform-component-checkboxes label.option {
+					color: #202020;
+					text-shadow: 1px 1px 18px rgba(255, 255, 255, 0.9);
 				}
 @media (max-width: 991px) {
 				section.block-webform .webform-client-form fieldset {

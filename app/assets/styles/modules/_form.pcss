@@ -14,7 +14,10 @@ section {
 			background-image: url('//assetlibs.kaplaninternational.com/_assets/summer2018/images/summer2018-form-md.jpg');
 		}
 		@mixin lg-min {
-			background-image: url('//assetlibs.kaplaninternational.com/_assets/summer2018/images/summer2018-form-md.jpg');
+			background-image: url('//assetlibs.kaplaninternational.com/_assets/summer2018/images/summer2018-form-lg.jpg');
+		}
+		@mixin all-Retina {
+			background-image: url('//assetlibs.kaplaninternational.com/_assets/summer2018/images/summer2018-form-lg@2x.jpg');
 		}
 
 		.block-title,
@@ -297,6 +300,13 @@ section {
 					border: none;
 					background-color: $color-accent-yellow;
 					color: $color-primary;
+				}
+			}
+
+			.webform-component-checkboxes {
+				label.option {
+					color: $color-grey-l;
+					text-shadow: 1px 1px 18px rgba(255, 255, 255, 0.9);
 				}
 			}
 

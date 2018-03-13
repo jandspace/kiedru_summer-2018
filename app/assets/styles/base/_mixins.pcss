@@ -79,14 +79,47 @@
 	}
 
 /* Retina - - - - - - - - - - - - - - - */
-	@define-mixin atRetina {
+	@define-mixin all-Retina {
 		@media
-			only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 1300px),
-			only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 1300px),
-			only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 1300px),
-			only screen and (        min-device-pixel-ratio: 2)      and (min-width: 1300px),
-			only screen and (                min-resolution: 192dpi) and (min-width: 1300px),
-			only screen and (                min-resolution: 2dppx)  and (min-width: 1300px) {
+			only screen and (-webkit-min-device-pixel-ratio: 2),
+			only screen and (   min--moz-device-pixel-ratio: 2),
+			only screen and (     -o-min-device-pixel-ratio: 2/1),
+			only screen and (        min-device-pixel-ratio: 2),
+			only screen and (                min-resolution: 192dpi),
+			only screen and (                min-resolution: 2dppx) {
+			@mixin-content;
+		}
+	}
+	@define-mixin sm-Retina {
+		@media
+			only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 768px),
+			only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 768px),
+			only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 768px),
+			only screen and (        min-device-pixel-ratio: 2)      and (min-width: 768px),
+			only screen and (                min-resolution: 192dpi) and (min-width: 768px),
+			only screen and (                min-resolution: 2dppx)  and (min-width: 768px) {
+			@mixin-content;
+		}
+	}
+	@define-mixin md-Retina {
+		@media
+			only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 992px),
+			only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 992px),
+			only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 992px),
+			only screen and (        min-device-pixel-ratio: 2)      and (min-width: 992px),
+			only screen and (                min-resolution: 192dpi) and (min-width: 992px),
+			only screen and (                min-resolution: 2dppx)  and (min-width: 992px) {
+			@mixin-content;
+		}
+	}
+	@define-mixin lg-Retina {
+		@media
+			only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 1200px),
+			only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 1200px),
+			only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 1200px),
+			only screen and (        min-device-pixel-ratio: 2)      and (min-width: 1200px),
+			only screen and (                min-resolution: 192dpi) and (min-width: 1200px),
+			only screen and (                min-resolution: 2dppx)  and (min-width: 1200px) {
 			@mixin-content;
 		}
 	}
