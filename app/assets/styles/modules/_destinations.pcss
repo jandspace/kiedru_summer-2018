@@ -1,0 +1,42 @@
+.field-item {
+	.section--destinations {
+		background-color: $color-grey-c;
+		.destinations {
+			.section-head {
+				span {
+					display: block;
+				}
+			}
+
+			.section-body {
+				.flex-container {
+
+					-ms-flex-direction: row-reverse;
+					-webkit-flex-direction: row-reverse;
+					flex-direction: row-reverse;
+
+					.flex-item {
+						flex: 0 0 100%;
+						max-width: 100%;
+
+						@mixin sm-min {
+							flex: 0 0 50%;
+							max-width: 50%;				
+						}
+
+						@mixin md-min {
+
+						}
+
+						.cta-container {
+							@mixin sm-min {
+								text-align: left;
+								padding-left: 20px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
