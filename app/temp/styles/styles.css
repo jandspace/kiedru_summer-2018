@@ -442,22 +442,22 @@ Instead edit gulp/templates/sprite */
 						width: 100%;
 						height: 100%;
 					}
-.field-item .section--hero .hero .hero-item-container .hero-image .item-bg { 
-						background-image: url('//assetlibs.kaplaninternational.com/_assets/summer2018/images/summer2018-hero-xs.jpg');
+.field-item .section--hero .hero .hero-item-container .hero-image .item-bg {
+						background-image: url('../../assets/images/summer2018-hero-xs.jpg');
 					}
 @media (min-width: 768px) {
 .field-item .section--hero .hero .hero-item-container .hero-image .item-bg {
-							background-image: url('//assetlibs.kaplaninternational.com/_assets/summer2018/images/summer2018-hero-sm.jpg')
+							background-image: url('../../assets/images/summer2018-hero-sm.jpg')
 					}
 		}
 @media (min-width: 992px) {
 .field-item .section--hero .hero .hero-item-container .hero-image .item-bg {
-							background-image: url('//assetlibs.kaplaninternational.com/_assets/summer2018/images/summer2018-hero-md.jpg')
+							background-image: url('../../assets/images/summer2018-hero-md.jpg')
 					}
 		}
 @media (min-width: 1200px) {
 .field-item .section--hero .hero .hero-item-container .hero-image .item-bg {
-							background-image: url('//assetlibs.kaplaninternational.com/_assets/summer2018/images/summer2018-hero-lg.jpg')
+							background-image: url('../../assets/images/summer2018-hero-lg.jpg')
 					}
 		}
 @media
@@ -468,7 +468,7 @@ Instead edit gulp/templates/sprite */
 			only screen and (                min-resolution: 192dpi),
 			only screen and (                min-resolution: 2dppx) {
 .field-item .section--hero .hero .hero-item-container .hero-image .item-bg {
-							background-image: url('//assetlibs.kaplaninternational.com/_assets/summer2018/images/summer2018-hero@2x.jpg')
+							background-image: url('../../assets/images/summer2018-hero@2x.jpg')
 					}
 		}
 .field-item .section--hero .hero .hero-item-container .hero-text {
@@ -1618,6 +1618,10 @@ section.block-webform .webform-client-form fieldset.panel .panel-body {
 							padding: 2em
 					}
 		}
+section.block-webform .webform-client-form fieldset .form-group.form-item {
+						margin-top: 0;
+						margin-bottom: 0;
+					}
 section.block-webform .webform-client-form fieldset label {
 					display: block;
 					float: none;
@@ -1790,6 +1794,19 @@ section.block-webform .webform-client-form .webform-component-checkboxes label.o
 					color: #202020;
 					text-shadow: 1px 1px 18px rgba(255, 255, 255, 0.9);
 				}
+section.block-webform .webform-client-form .form-group.form-item {
+					margin-top: 1em;
+					margin-bottom: 1em;
+					color: #202020;
+				}
+section.block-webform .webform-client-form .form-group.form-item label {
+						color: #202020;
+					}
+section.block-webform .webform-client-form .form-group.form-item label input[type="checkbox"],
+						section.block-webform .webform-client-form .form-group.form-item label input[type="radio"] {
+							left: 0;
+							margin-left: 0;
+						}
 @media (max-width: 991px) {
 				section.block-webform .webform-client-form fieldset {
 					margin-bottom: 25px;
@@ -1803,13 +1820,6 @@ section.block-webform .webform-client-form {
 @media (min-width: 768px) {
 		}
 @media (min-width: 992px) {
-				 	section.block-webform .webform-client-form > div > .webform-component-checkboxes {
-						/* input[type="checkbox"] {
-							position: absolute;
-							right: 0;
-						} */
-					}
-						/* text-align: right; */
 						section.block-webform .webform-client-form > div > .webform-component-checkboxes label.option {
 							padding-right: 30px;
 						}
@@ -1890,6 +1900,13 @@ section.block-webform .webform-client-form {
 							padding-left: 30px
 						}
 		}
+.language-dir-rtl section.block-webform .webform-client-form .form-group.form-item label input[type="checkbox"],
+							.language-dir-rtl section.block-webform .webform-client-form .form-group.form-item label input[type="radio"] {
+								left: auto;
+								right: 0;
+								margin-left: auto;
+								margin-right: 0;
+							}
 .language-dir-rtl section.block-webform .webform-client-form .webform-submit {
 					float: left
 				}
